@@ -129,7 +129,7 @@ var question_17 = {
 var question_18 = {
     question: "Trong Excel, giả sử ô A1 của bảng tính lưu trị ngày 30/10/2020. Kết quả hàm =MONTH(A1) là bao nhiêu?",
     answer_a: "10",
-    answer_b: "30", 
+    answer_b: "30",
     answer_c: "2020",
     answer_d: "15/10/2020",
 }

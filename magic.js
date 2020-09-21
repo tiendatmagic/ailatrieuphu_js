@@ -12,6 +12,7 @@ var start = document.getElementsByClassName("start")[0];
 var numberquestion = 0;
 var order = 1;
 var money = 0;
+var time = 15;
 var musicbg = document.getElementById("musicbg");
 var waitingg = document.getElementById("waiting");
 var correctt = document.getElementById("ctrue");
@@ -20,8 +21,13 @@ window.onload = function()
             {
             	musicbg.play();	
             };
+           
 function fstart() {
     
+
+    
+    rePlay();
+   // time = 15;
     musicbg.pause();
     start.style.display = 'none';
     var math = Math.ceil(Math.random() * 30);
@@ -374,6 +380,19 @@ function fstart() {
     }
 
 }
+
+
+function rePlay(){
+    document.getElementsByClassName("time")[0].innerHTML = time--;
+    var timm = setTimeout(rePlay, 1000);
+  
+  if (time < 0) {
+    time = 0
+   
+   lose();
+    clearTimeout(tim);
+  }
+}
 function winner() {
     document.getElementById("questionanswer").remove();
     var e = document.createElement("h1");
@@ -499,7 +518,9 @@ answer_1.addEventListener("click", function () {
    
     selectan += 1;
     if (selectan === 1) {
-        waitingg.play();	
+        
+        waitingg.play();
+        time = 15;	
        // 
         answer_1.style.backgroundColor = "orange";
         setTimeout(function () {
@@ -531,7 +552,7 @@ answer_2.addEventListener("click", function () {
     selectan += 1;
     if (selectan === 1) {
         waitingg.play();	
-        
+        time = 15;
         answer_2.style.backgroundColor = "orange";
         setTimeout(function () {
             selectan = 0;
@@ -561,7 +582,8 @@ answer_2.addEventListener("click", function () {
 answer_3.addEventListener("click", function () {
     selectan += 1;
     if (selectan === 1) {
-        waitingg.play();	
+        waitingg.play();
+        time = 15;	
         
         answer_3.style.backgroundColor = "orange";
         setTimeout(function () {
@@ -592,6 +614,7 @@ answer_4.addEventListener("click", function () {
     selectan += 1;
     if (selectan === 1) {
         waitingg.play();	
+        time = 15;
         
         answer_4.style.backgroundColor = "orange";
         setTimeout(function () {
