@@ -17,6 +17,7 @@ var musicbg = document.getElementById("musicbg");
 var waitingg = document.getElementById("waiting");
 var correctt = document.getElementById("ctrue");
 var ncorrectt = document.getElementById("cfalse");
+
 window.onload = function()
             {
             	musicbg.play();	
@@ -381,18 +382,24 @@ function fstart() {
 
 }
 
-
 function rePlay(){
+    
     document.getElementsByClassName("time")[0].innerHTML = time--;
-    var timm = setTimeout(rePlay, 1000);
+   var tim = setTimeout(rePlay, 1000);
   
   if (time < 0) {
     time = 0
    
    lose();
+   
+    
+  }
+
+  if (selectan === 1) {
     clearTimeout(tim);
   }
 }
+
 function winner() {
     document.getElementById("questionanswer").remove();
     var e = document.createElement("h1");
