@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game ai là triệu phú</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div id="root">
+        <h1>Game ai là triệu phú</h1>
+
+        <input type="button" class="start" value="START">
+       
+        <div id="questionanswer">
+            <div class="money"></div>
+
+            <div class="q">
+
+
+                <b class="cau"></b>
+                <b class="numberquestion"></b>
+                <h2 class="question"></h2>
+            </div>
+            <div id="answer">
+                <div class="answerr answer_1"></div>
+                <div class="answerr answer_2"></div>
+                <div class="answerr answer_3"></div>
+                <div class="answerr answer_4"></div>
+            </div>
+
+        </div>
+        <div class="music">
+            <audio controls loop id="musicbg" hidden="">
+
+                <source src="./menubg.mp3" allow="autoplay" type="audio/mpeg">
+                    <!-- <iframe src="./menubg.mp3" allow="autoplay"  id="iframeAudio">
+                    </iframe>  -->
+                Your browser does not support the audio element.
+              </audio>
+
+              <audio id="waiting" hidden="">
+
+                <source src="./waiting.mp3" type="audio/mpeg">
+                    <!-- <iframe src="./menubg.mp3" allow="autoplay"  id="iframeAudio">
+                    </iframe>  -->
+                Your browser does not support the audio element.
+              </audio>
+
+              <audio id="ctrue" hidden="">
+
+                <source src="./true.mp3" type="audio/mpeg">
+                    <!-- <iframe src="./menubg.mp3" allow="autoplay"  id="iframeAudio">
+                    </iframe>  -->
+                Your browser does not support the audio element.
+              </audio>
+
+              <audio id="cfalse" hidden="">
+
+                <source src="./false.mp3" type="audio/mpeg">
+                    <!-- <iframe src="./menubg.mp3" allow="autoplay"  id="iframeAudio">
+                    </iframe>  -->
+                Your browser does not support the audio element.
+              </audio>
+
+        </div>
+        <div class="footer">
+
+
+            <h4 class="text-danger text-d text-footer">© 2020 Copyright by Tiendatmagic - All Rights Reserved | Designed
+                by
+                Tiendatmagic</h4>
+            <h4 class="text-danger text-d"><span>Liên hệ:<a href="https://www.facebook.com/tiendatmagic">Tiến Đạt
+                        Magic</a></span></h4>
+        </div>
+    </div>
+    <script src="./question.js"></script>
+    <script src="./magic.js"></script>
+</body>
+
+</html>
