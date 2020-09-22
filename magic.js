@@ -7,6 +7,7 @@ var answer_1 = document.getElementsByClassName("answer_1")[0];
 var answer_2 = document.getElementsByClassName("answer_2")[0];
 var answer_3 = document.getElementsByClassName("answer_3")[0];
 var answer_4 = document.getElementsByClassName("answer_4")[0];
+var info = document.getElementsByClassName("info")[0];
 var start = document.getElementsByClassName("start")[0];
 var numberquestion = 0;
 var order = 1;
@@ -17,6 +18,7 @@ var waitingg = document.getElementById("waiting");
 var correctt = document.getElementById("ctrue");
 var ncorrectt = document.getElementById("cfalse");
 var cmuss = document.getElementById("cmus");
+var cinfo = document.getElementById("cinfo");
 window.onload = function () {
 	musicbg.play();
 };
@@ -73,59 +75,25 @@ function lose() {
 	setTimeout(over, 3000);
 }
 
-function fmoney() {
-	switch (numberquestion) {
-		case 1:
-			money = 100;
-			break;
-		case 2:
-			money = 200;
-			break;
-		case 3:
-			money = 300;
-			break;
-		case 4:
-			money = 500;
-			break;
-		case 5:
-			money = 1000;
-			break;
-		case 6:
-			money = 2000;
-			break;
-		case 7:
-			money = 4000;
-			break;
-		case 8:
-			money = 8000;
-			break;
-		case 9:
-			money = 16000;
-			break;
-		case 10:
-			money = 32000;
-			break;
-		case 11:
-			money = 64000;
-			break;
-		case 12:
-			money = 125000;
-			break;
-		case 13:
-			money = 250000;
-			break;
-		case 14:
-			money = 500000;
-			break;
-		case 15:
-			money = 1000000;
-			break;
-		default:
-			break;
-	}
+function finfo() {
+	musicbg.pause();
+	cinfo.play();
+	info.style.display = 'none';
+	
+	document.getElementsByClassName("table")[0].style.display='flex';
+	setTimeout(function() {
+		document.querySelector("table tr:nth-child(2)").style.backgroundColor='red';
+		document.querySelector("table tr:nth-child(7)").style.backgroundColor='red';
+		document.querySelector("table tr:nth-child(12)").style.backgroundColor='red';
+	},4500);
+
+	setTimeout(function() {
+		document.getElementsByClassName("table")[0].style.display='none';
+		start.style.display = 'flex';
+	},14500)
 }
-//start.addEventListener("click", fstart);
-start.addEventListener("click", finfo);
+start.addEventListener("click", fstart);
+info.addEventListener("click", finfo);
 answer_1.addEventListener("click", function () {
 	selectan += 1;
 	if (selectan === 1) {

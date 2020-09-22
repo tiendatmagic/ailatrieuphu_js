@@ -35,7 +35,9 @@ input[type='button']:active {
 input[type='button']:focus {
 	background-color: hotpink;
 }
-
+input[class='start'] {
+	display: none;
+}
 #root {
 	text-align: center;
 }
@@ -100,6 +102,22 @@ b {
     font-size: 2.3em;
 
 }
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+  }
+  .table {
+	display: none;
+	justify-content: center;
+	
+  }
+tr {
+	background-color: rgb(82, 82, 250);
+}
+
+
+  
 
 @media only screen and (max-width: 600px) {
 	#answer div {
