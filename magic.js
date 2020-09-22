@@ -408,13 +408,21 @@ function rePlay(){
 function winner() {
     document.getElementById("questionanswer").remove();
     var e = document.createElement("h1");
-    document.getElementById("root").appendChild(e);
+    document.getElementById("gameover").appendChild(e);
     e.appendChild(document.createTextNode("Bạn đã phá đảo thành công game này, số tiền của bạn: "));
-    document.getElementById("root").appendChild(e);
+    document.getElementById("gameover").appendChild(e);
     e.appendChild(document.createTextNode(money));
 }
 
-
+function over() {
+    document.getElementById("questionanswer").remove();
+    var e = document.createElement("h1");
+    document.getElementById("gameover").appendChild(e);
+    e.appendChild(document.createTextNode("Bạn ngu vcl, tiền nè: "));
+    document.getElementById("gameover").appendChild(e);
+    e.appendChild(document.createTextNode(money));
+  	
+}
 
 function lose() {
     if (correct === 1) {
@@ -445,15 +453,7 @@ function lose() {
     setTimeout(over, 3000);
 
 }
-function over() {
-    document.getElementById("questionanswer").remove();
-    var e = document.createElement("h1");
-    document.getElementById("root").appendChild(e);
-    e.appendChild(document.createTextNode("Bạn ngu vcl, tiền nè: "));
-    document.getElementById("root").appendChild(e);
-    e.appendChild(document.createTextNode(money));
-  	
-}
+
 
 function fmoney() {
     switch (numberquestion) {
