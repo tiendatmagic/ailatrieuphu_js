@@ -17,13 +17,13 @@ var waitingg = document.getElementById("waiting");
 var correctt = document.getElementById("ctrue");
 var ncorrectt = document.getElementById("cfalse");
 var cmuss = document.getElementById("cmus");
-window.onload = function() {
+window.onload = function () {
 	musicbg.play();
 };
 
 function fstart() {
-    musicbg.pause();
-    cmuss.play();
+	musicbg.pause();
+	cmuss.play();
 	start.style.display = 'none';
 	var math = Math.ceil(Math.random() * 40);
 	order = math;
@@ -34,21 +34,21 @@ function fstart() {
 	answer_2.style.backgroundColor = "rgb(105,114,255)";
 	answer_3.style.backgroundColor = "rgb(105,114,255)";
 	answer_4.style.backgroundColor = "rgb(105,114,255)";
-	if(numberquestion === 15) {
+	if (numberquestion === 15) {
 		winner();
 	} else {
-		setTimeout(function() {
+		setTimeout(function () {
 			selectan = 0;
-			
-			
+
+
 		}, 1000);
 
-		setTimeout(function() {
-			
+		setTimeout(function () {
+
 			rePlay();
-			
+
 		}, 1500);
-		switch(math) {
+		switch (math) {
 			case 1:
 				question.innerText = question_1.question;
 				answer_1.innerText = question_1.answer_a;
@@ -418,13 +418,13 @@ function fstart() {
 }
 
 function rePlay() {
-	document.getElementsByClassName("time")[0].innerHTML ="Còn: " +time-- + " giây";
+	document.getElementsByClassName("time")[0].innerHTML = "Còn: " + time-- + " giây";
 	var tim = setTimeout(rePlay, 1000);
-	if(time < 0) {
+	if (time < 0) {
 		time = 0
 		lose();
 	}
-	if(selectan === 1) {
+	if (selectan === 1) {
 		clearTimeout(tim);
 	}
 }
@@ -435,8 +435,8 @@ function winner() {
 	document.getElementById("gameover").appendChild(e);
 	e.appendChild(document.createTextNode("Bạn đã phá đảo thành công game này, số tiền của bạn: "));
 	document.getElementById("gameover").appendChild(e);
-    e.appendChild(document.createTextNode(money));
-    cmuss.pause();
+	e.appendChild(document.createTextNode(money));
+	cmuss.pause();
 }
 
 function over() {
@@ -445,18 +445,18 @@ function over() {
 	document.getElementById("gameover").appendChild(e);
 	e.appendChild(document.createTextNode("Bạn ngu vcl, tiền nè: "));
 	document.getElementById("gameover").appendChild(e);
-    e.appendChild(document.createTextNode(money));
-    cmuss.pause();
+	e.appendChild(document.createTextNode(money));
+	cmuss.pause();
 }
 
 function lose() {
-	if(correct === 1) {
+	if (correct === 1) {
 		answer_1.style.backgroundColor = "green";
 		selectan = 1;
-	} else if(correct === 2) {
+	} else if (correct === 2) {
 		answer_2.style.backgroundColor = "green";
 		selectan = 1;
-	} else if(correct === 3) {
+	} else if (correct === 3) {
 		answer_3.style.backgroundColor = "green";
 		selectan = 1;
 	} else {
@@ -468,7 +468,7 @@ function lose() {
 }
 
 function fmoney() {
-	switch(numberquestion) {
+	switch (numberquestion) {
 		case 1:
 			money = 100;
 			break;
@@ -519,18 +519,18 @@ function fmoney() {
 	}
 }
 start.addEventListener("click", fstart);
-answer_1.addEventListener("click", function() {
+answer_1.addEventListener("click", function () {
 	selectan += 1;
-	if(selectan === 1) {
+	if (selectan === 1) {
 		waitingg.play();
 		time = 15;
 		answer_1.style.backgroundColor = "orange";
-		setTimeout(function() {
+		setTimeout(function () {
 			answer_1.style.backgroundColor = "rgb(105,114,255)";
-			if(correct === 1) {
+			if (correct === 1) {
 				answer_1.style.backgroundColor = "deeppink";
 				correctt.play();
-				setTimeout(function() {
+				setTimeout(function () {
 					fmoney();
 					fstart();
 				}, 2000);
@@ -540,18 +540,18 @@ answer_1.addEventListener("click", function() {
 		}, 2000);
 	}
 });
-answer_2.addEventListener("click", function() {
+answer_2.addEventListener("click", function () {
 	selectan += 1;
-	if(selectan === 1) {
+	if (selectan === 1) {
 		waitingg.play();
 		time = 15;
 		answer_2.style.backgroundColor = "orange";
-		setTimeout(function() {
+		setTimeout(function () {
 			answer_2.style.backgroundColor = "rgb(105,114,255)";
-			if(correct === 2) {
+			if (correct === 2) {
 				answer_2.style.backgroundColor = "deeppink";
 				correctt.play();
-				setTimeout(function() {
+				setTimeout(function () {
 					fmoney();
 					fstart();
 				}, 2000);
@@ -561,18 +561,18 @@ answer_2.addEventListener("click", function() {
 		}, 2000);
 	}
 });
-answer_3.addEventListener("click", function() {
+answer_3.addEventListener("click", function () {
 	selectan += 1;
-	if(selectan === 1) {
+	if (selectan === 1) {
 		waitingg.play();
 		time = 15;
 		answer_3.style.backgroundColor = "orange";
-		setTimeout(function() {
+		setTimeout(function () {
 			answer_3.style.backgroundColor = "rgb(105,114,255)";
-			if(correct === 3) {
+			if (correct === 3) {
 				answer_3.style.backgroundColor = "deeppink";
 				correctt.play();
-				setTimeout(function() {
+				setTimeout(function () {
 					fmoney();
 					fstart();
 				}, 2000);
@@ -582,18 +582,18 @@ answer_3.addEventListener("click", function() {
 		}, 2000);
 	}
 });
-answer_4.addEventListener("click", function() {
+answer_4.addEventListener("click", function () {
 	selectan += 1;
-	if(selectan === 1) {
+	if (selectan === 1) {
 		waitingg.play();
 		time = 15;
 		answer_4.style.backgroundColor = "orange";
-		setTimeout(function() {
+		setTimeout(function () {
 			answer_4.style.backgroundColor = "rgb(105,114,255)";
-			if(correct === 4) {
+			if (correct === 4) {
 				answer_4.style.backgroundColor = "deeppink";
 				correctt.play();
-				setTimeout(function() {
+				setTimeout(function () {
 					fmoney();
 					fstart();
 				}, 2000);
