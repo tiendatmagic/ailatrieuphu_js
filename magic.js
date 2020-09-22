@@ -27,7 +27,7 @@ function fstart() {
     
 
     
-    rePlay();
+   
    // time = 15;
     musicbg.pause();
     start.style.display = 'none';
@@ -48,7 +48,7 @@ function fstart() {
     }
 
     else {
-
+        rePlay();
 
         switch (math) {
             case 1:
@@ -387,7 +387,7 @@ function rePlay(){
     document.getElementsByClassName("time")[0].innerHTML = time--;
    var tim = setTimeout(rePlay, 1000);
   
-  if (time < 0) {
+  if (time < 0 ) {
     time = 0
    
    lose();
@@ -395,7 +395,7 @@ function rePlay(){
     
   }
 
-  if (selectan === 1) {
+  if (selectan === 1 ) {
     clearTimeout(tim);
   }
 }
@@ -520,6 +520,7 @@ function fmoney() {
     }
 }
 start.addEventListener("click", fstart);
+//start.addEventListener("click",  rePlay);
 answer_1.addEventListener("click", function () {
    // waitingg.play();
    
@@ -531,17 +532,18 @@ answer_1.addEventListener("click", function () {
        // 
         answer_1.style.backgroundColor = "orange";
         setTimeout(function () {
-            selectan = 0;
+           
             answer_1.style.backgroundColor = "rgb(105,114,255)";
 
 
             if (correct === 1) {
                 answer_1.style.backgroundColor = "deeppink";
+                selectan = 1;
                 correctt.play();
                 setTimeout(function () {
                     fmoney();
-                    selectan = 0;
                     fstart();
+                    selectan = 0;
                 }, 2000);
             }
             else {
@@ -562,18 +564,19 @@ answer_2.addEventListener("click", function () {
         time = 15;
         answer_2.style.backgroundColor = "orange";
         setTimeout(function () {
-            selectan = 0;
+            
             answer_2.style.backgroundColor = "rgb(105,114,255)";
 
             //
             if (correct === 2) {
 
                 answer_2.style.backgroundColor = "deeppink";
+                selectan = 1;
                 correctt.play();
                 setTimeout(function () {
                     fmoney();
-                    selectan = 0;
                     fstart();
+                    selectan = 0;
                 }, 2000);
             }
             else {
@@ -594,17 +597,18 @@ answer_3.addEventListener("click", function () {
         
         answer_3.style.backgroundColor = "orange";
         setTimeout(function () {
-            selectan = 0;
+            
             answer_3.style.backgroundColor = "rgb(105,114,255)";
 
             //
             if (correct === 3) {
                 answer_3.style.backgroundColor = "deeppink";
+                selectan = 1;
                 correctt.play();
                 setTimeout(function () {
                     fmoney();
-                    selectan = 0;
                     fstart();
+                    selectan = 0;
                 }, 2000);
             }
             else {
@@ -625,17 +629,19 @@ answer_4.addEventListener("click", function () {
         
         answer_4.style.backgroundColor = "orange";
         setTimeout(function () {
-            selectan = 0;
+            
             answer_4.style.backgroundColor = "rgb(105,114,255)";
 
             //
             if (correct === 4) {
                 answer_4.style.backgroundColor = "deeppink";
+                selectan = 1;
                 correctt.play();
                 setTimeout(function () {
                     fmoney();
-                    selectan = 0;
                     fstart();
+                    selectan = 0;
+                    
                 }, 2000);
             }
             else {

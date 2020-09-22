@@ -102,15 +102,15 @@ b {
 
 @media only screen and (max-width: 600px) {
 	#answer div {
-		background-color: red !important;
-		width: 340px !important;
 
+		width: 340px !important;
+	
 	}
 }
 
 @media only screen and (max-width: 340px) {
 	#answer div {
-		background-color: red !important;
+
 		width: 250px !important;
 		
 
