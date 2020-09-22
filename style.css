@@ -52,6 +52,7 @@ b {
 	background-color: rgb(255,199,229);
 	border-radius: 30px;
 	padding: 10px;
+	word-wrap: break-word;
 }
 
 #answer {
