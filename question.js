@@ -203,7 +203,7 @@ var question_27 = {
     answer_a: "#VALUE!",
     answer_b: "#N/A",
     answer_c: "12",
-    answer_d: "0",
+    answer_d: "TIENDATMAGIC",
 }
 
 var question_28 = {
