@@ -111,7 +111,7 @@ var question_16 = {
 	answer_d: "Biểu diễn sai",
 }
 var question_17 = {
-	question: "Trong Excel 2016, hỗ trợ tối đa bao nhiêu dòng",
+	question: "Trong Excel, hỗ trợ tối đa bao nhiêu dòng",
 	answer_a: "1048576",
 	answer_b: "65536",
 	answer_c: "696969",
@@ -125,7 +125,7 @@ var question_18 = {
 	answer_d: "15/10/2020",
 }
 var question_19 = {
-	question: "Trong bảng tính Excel, Tại ô A2 gõ vào công thức =MAX(30,10,65,5)thì nhận được kết quả tại ô A2 là:",
+	question: "Trong Excel, Tại ô A2 gõ vào công thức =MAX(30,10,65,5)thì nhận được kết quả tại ô A2 là:",
 	answer_a: "65",
 	answer_b: "5",
 	answer_c: "10",
