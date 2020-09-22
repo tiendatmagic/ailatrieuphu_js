@@ -103,7 +103,7 @@ var question_14 = {
 }
 
 var question_15 = {
-    question: "Trong bảng tính Excel, tại ô A2 có sẵn giá trị chuỗi 'Tiendatmagic deptrai'; ô B2 có giá trị số 2008. Tại ô C2 gõ vào công thức =A2+B2 thì nhận được kết quả",
+    question: "Trong bảng tính Excel, tại ô A2 có sẵn giá trị chuỗi 'Tiendatmagic deptrai', ô B2 có giá trị số 2008. Tại ô C2 gõ vào công thức =A2+B2 thì nhận được kết quả",
     answer_a: "Tiendatmagic deptrai",
     answer_b: "2008",
     answer_c: "Tiendatmagic deptrai2008",
@@ -229,3 +229,52 @@ var question_30 = {
     answer_c: "#VALUE!",
     answer_d: "#NAME",
 }
+
+var question_31 = {
+    question: "Trong Excel, tại ô B1 có sẵn giá trị 69, C1 chứa 96. Công thức =IF(RIGHT('TIENDATMAGIC',3)='ABC',B1,C2)",
+    answer_a: "69",
+    answer_b: "96",
+    answer_c: "GIC!",
+    answer_d: "0",
+}
+
+var question_32 = {
+    question: "Dịch vụ lưu trữ đám mây của Onedrive là gì?",
+    answer_a: "Google Drive",
+    answer_b: "OneDrive",    
+    answer_c: "Fshare",
+    answer_d: "Icloud",
+}
+
+var question_33 = {
+    question: "Dịch vụ lưu trữ đám mây của Onedrive là gì?",
+    answer_a: "Google Drive",
+    answer_b: "OneDrive",    
+    answer_c: "Fshare",
+    answer_d: "Icloud",
+}
+
+var question_34 = {
+    question: "Thuộc tính nào sau đây là thuộc tính lưu trữ của tệp tin",
+    answer_a: "Read-only",
+    answer_b: "Hidden",
+    answer_c: "System",
+    answer_d: "Archive",
+}
+
+var question_35 = {
+    question: "Trong bảng tính Excel, tại ô A2 có sẵn giá trị số không, tại ô B2 gõ vào công thức =5/A2 thì nhận được kết quả?",
+    answer_a: "0",
+    answer_b: "5",
+    answer_c: "#VALUE!",
+    answer_d: "#DIV/0!",
+}
+
+var question_36 = {
+    question: "Trong bảng tính Excel, tại ô A2 có sẵn giá trị số không, tại ô B2 gõ vào công thức =5/A2 thì nhận được kết quả?",
+    answer_a: "0",
+    answer_b: "5",
+    answer_c: "#VALUE!",
+    answer_d: "#DIV/0!",
+}
+
