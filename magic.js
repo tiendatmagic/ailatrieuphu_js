@@ -18,19 +18,18 @@ var waitingg = document.getElementById("waiting");
 var correctt = document.getElementById("ctrue");
 var ncorrectt = document.getElementById("cfalse");
 
-window.onload = function()
-            {
-            	musicbg.play();	
-            };
-           
-function fstart() {
-    
+window.onload = function () {
+    musicbg.play();
+};
 
-    
-   // selectan = 0;
-   // time = 15;
-  
-   
+function fstart() {
+
+
+
+    // selectan = 0;
+    // time = 15;
+
+
     musicbg.pause();
     start.style.display = 'none';
     var math = Math.ceil(Math.random() * 30);
@@ -42,7 +41,7 @@ function fstart() {
     answer_2.style.backgroundColor = "rgb(105,114,255)";
     answer_3.style.backgroundColor = "rgb(105,114,255)";
     answer_4.style.backgroundColor = "rgb(105,114,255)";
-   
+
 
     if (numberquestion === 15) {
         winner();
@@ -50,10 +49,10 @@ function fstart() {
     }
 
     else {
-        setTimeout(function() {
+        setTimeout(function () {
             selectan = 0;
             rePlay();
-           },1000);
+        }, 1000);
 
         switch (math) {
             case 1:
@@ -63,7 +62,7 @@ function fstart() {
                 answer_3.innerText = question_1.answer_c;
                 answer_4.innerText = question_1.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 2;
                 break;
             case 2:
@@ -73,7 +72,7 @@ function fstart() {
                 answer_3.innerText = question_2.answer_c;
                 answer_4.innerText = question_2.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 3;
 
                 break;
@@ -84,7 +83,7 @@ function fstart() {
                 answer_3.innerText = question_3.answer_c;
                 answer_4.innerText = question_3.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 1;
                 break;
             case 4:
@@ -94,7 +93,7 @@ function fstart() {
                 answer_3.innerText = question_4.answer_c;
                 answer_4.innerText = question_4.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 2;
                 break;
             case 5:
@@ -104,7 +103,7 @@ function fstart() {
                 answer_3.innerText = question_5.answer_c;
                 answer_4.innerText = question_5.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 4;
                 break;
             case 6:
@@ -114,7 +113,7 @@ function fstart() {
                 answer_3.innerText = question_6.answer_c;
                 answer_4.innerText = question_6.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 1;
                 break;
             case 7:
@@ -124,7 +123,7 @@ function fstart() {
                 answer_3.innerText = question_7.answer_c;
                 answer_4.innerText = question_7.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 1;
                 break;
             case 8:
@@ -134,7 +133,7 @@ function fstart() {
                 answer_3.innerText = question_8.answer_c;
                 answer_4.innerText = question_8.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 3;
                 break;
             case 9:
@@ -144,7 +143,7 @@ function fstart() {
                 answer_3.innerText = question_9.answer_c;
                 answer_4.innerText = question_9.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 2;
                 break;
             case 10:
@@ -154,7 +153,7 @@ function fstart() {
                 answer_3.innerText = question_10.answer_c;
                 answer_4.innerText = question_10.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 1;
                 break;
 
@@ -166,7 +165,7 @@ function fstart() {
                 answer_3.innerText = question_11.answer_c;
                 answer_4.innerText = question_11.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 4;
                 break;
 
@@ -177,7 +176,7 @@ function fstart() {
                 answer_3.innerText = question_12.answer_c;
                 answer_4.innerText = question_12.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 3;
                 break;
 
@@ -188,7 +187,7 @@ function fstart() {
                 answer_3.innerText = question_13.answer_c;
                 answer_4.innerText = question_13.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 4;
                 break;
 
@@ -199,7 +198,7 @@ function fstart() {
                 answer_3.innerText = question_14.answer_c;
                 answer_4.innerText = question_14.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 4;
                 break;
 
@@ -210,7 +209,7 @@ function fstart() {
                 answer_3.innerText = question_15.answer_c;
                 answer_4.innerText = question_15.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 4;
                 break;
 
@@ -221,7 +220,7 @@ function fstart() {
                 answer_3.innerText = question_16.answer_c;
                 answer_4.innerText = question_16.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 1;
                 break;
 
@@ -232,7 +231,7 @@ function fstart() {
                 answer_3.innerText = question_17.answer_c;
                 answer_4.innerText = question_17.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 1;
                 break;
 
@@ -243,7 +242,7 @@ function fstart() {
                 answer_3.innerText = question_18.answer_c;
                 answer_4.innerText = question_18.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 1;
                 break;
 
@@ -254,7 +253,7 @@ function fstart() {
                 answer_3.innerText = question_19.answer_c;
                 answer_4.innerText = question_19.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 1;
                 break;
 
@@ -265,7 +264,7 @@ function fstart() {
                 answer_3.innerText = question_20.answer_c;
                 answer_4.innerText = question_20.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 1;
                 break;
 
@@ -276,7 +275,7 @@ function fstart() {
                 answer_3.innerText = question_21.answer_c;
                 answer_4.innerText = question_21.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 2;
                 break;
 
@@ -287,7 +286,7 @@ function fstart() {
                 answer_3.innerText = question_22.answer_c;
                 answer_4.innerText = question_22.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 2;
                 break;
 
@@ -298,7 +297,7 @@ function fstart() {
                 answer_3.innerText = question_23.answer_c;
                 answer_4.innerText = question_23.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 2;
                 break;
 
@@ -309,7 +308,7 @@ function fstart() {
                 answer_3.innerText = question_24.answer_c;
                 answer_4.innerText = question_24.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 2;
                 break;
 
@@ -320,7 +319,7 @@ function fstart() {
                 answer_3.innerText = question_25.answer_c;
                 answer_4.innerText = question_25.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 2;
                 break;
 
@@ -331,7 +330,7 @@ function fstart() {
                 answer_3.innerText = question_26.answer_c;
                 answer_4.innerText = question_26.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 3;
                 break;
 
@@ -342,7 +341,7 @@ function fstart() {
                 answer_3.innerText = question_27.answer_c;
                 answer_4.innerText = question_27.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 3;
                 break;
 
@@ -353,7 +352,7 @@ function fstart() {
                 answer_3.innerText = question_28.answer_c;
                 answer_4.innerText = question_28.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 3;
                 break;
 
@@ -364,7 +363,7 @@ function fstart() {
                 answer_3.innerText = question_29.answer_c;
                 answer_4.innerText = question_29.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 3;
                 break;
 
@@ -375,7 +374,7 @@ function fstart() {
                 answer_3.innerText = question_30.answer_c;
                 answer_4.innerText = question_30.answer_d;
                 numberquestion += 1;
-                
+
                 correct = 3;
                 break;
 
@@ -384,26 +383,26 @@ function fstart() {
                 break;
         }
         document.getElementsByClassName("numberquestion")[0].innerHTML = numberquestion;
-    }   
+    }
 
 }
 
-function rePlay(){
-    
-    document.getElementsByClassName("time")[0].innerHTML = time--;
-   var tim = setTimeout(rePlay, 1000);
-  
-  if (time < 0 ) {
-    time = 0
-   
-   lose();
-   
-    
-  }
+function rePlay() {
 
-  if (selectan === 1 ) {
-    clearTimeout(tim);
-  }
+    document.getElementsByClassName("time")[0].innerHTML = time--;
+    var tim = setTimeout(rePlay, 1000);
+
+    if (time < 0) {
+        time = 0
+
+        lose();
+
+
+    }
+
+    if (selectan === 1) {
+        clearTimeout(tim);
+    }
 }
 
 function winner() {
@@ -422,14 +421,14 @@ function over() {
     e.appendChild(document.createTextNode("Bạn ngu vcl, tiền nè: "));
     document.getElementById("gameover").appendChild(e);
     e.appendChild(document.createTextNode(money));
-  	
+
 }
 
 function lose() {
     if (correct === 1) {
         answer_1.style.backgroundColor = "green";
         selectan = 1;
-        
+
 
     }
 
@@ -525,23 +524,23 @@ function fmoney() {
 start.addEventListener("click", fstart);
 //start.addEventListener("click",  rePlay);
 answer_1.addEventListener("click", function () {
-   // waitingg.play();
-   
+    // waitingg.play();
+
     selectan += 1;
     if (selectan === 1) {
-        
+
         waitingg.play();
-        time = 15;	
-       // 
+        time = 15;
+        // 
         answer_1.style.backgroundColor = "orange";
         setTimeout(function () {
-           
+
             answer_1.style.backgroundColor = "rgb(105,114,255)";
 
 
             if (correct === 1) {
                 answer_1.style.backgroundColor = "deeppink";
-               
+
                 correctt.play();
                 setTimeout(function () {
                     fmoney();
@@ -562,11 +561,11 @@ answer_1.addEventListener("click", function () {
 answer_2.addEventListener("click", function () {
     selectan += 1;
     if (selectan === 1) {
-        waitingg.play();	
+        waitingg.play();
         time = 15;
         answer_2.style.backgroundColor = "orange";
         setTimeout(function () {
-            
+
             answer_2.style.backgroundColor = "rgb(105,114,255)";
 
             //
@@ -577,7 +576,7 @@ answer_2.addEventListener("click", function () {
                 correctt.play();
                 setTimeout(function () {
                     fmoney();
-                     fstart();
+                    fstart();
                 }, 2000);
             }
             else {
@@ -594,21 +593,21 @@ answer_3.addEventListener("click", function () {
     selectan += 1;
     if (selectan === 1) {
         waitingg.play();
-        time = 15;	
-        
+        time = 15;
+
         answer_3.style.backgroundColor = "orange";
         setTimeout(function () {
-            
+
             answer_3.style.backgroundColor = "rgb(105,114,255)";
 
             //
             if (correct === 3) {
                 answer_3.style.backgroundColor = "deeppink";
-               
+
                 correctt.play();
                 setTimeout(function () {
                     fmoney();
-                     fstart();
+                    fstart();
                 }, 2000);
             }
             else {
@@ -624,22 +623,22 @@ answer_3.addEventListener("click", function () {
 answer_4.addEventListener("click", function () {
     selectan += 1;
     if (selectan === 1) {
-        waitingg.play();	
+        waitingg.play();
         time = 15;
-        
+
         answer_4.style.backgroundColor = "orange";
         setTimeout(function () {
-            
+
             answer_4.style.backgroundColor = "rgb(105,114,255)";
 
             //
             if (correct === 4) {
                 answer_4.style.backgroundColor = "deeppink";
-               
+
                 correctt.play();
                 setTimeout(function () {
                     fmoney();
-                     fstart();
+                    fstart();
                 }, 2000);
             }
             else {
