@@ -27,7 +27,7 @@ function fstart() {
 	order = math;
 	document.getElementsByClassName("cau")[0].innerText = "Câu:";
 	document.getElementById("questionanswer").style.display = 'block';
-	var moneyy = document.getElementsByClassName("money")[0].innerHTML = money;
+	var moneyy = document.getElementsByClassName("money")[0].innerHTML = "Số tiền: " + money;
 	answer_1.style.backgroundColor = "rgb(105,114,255)";
 	answer_2.style.backgroundColor = "rgb(105,114,255)";
 	answer_3.style.backgroundColor = "rgb(105,114,255)";
@@ -409,7 +409,7 @@ function fstart() {
 }
 
 function rePlay() {
-	document.getElementsByClassName("time")[0].innerHTML = time--;
+	document.getElementsByClassName("time")[0].innerHTML ="Còn: " +time-- + " giây";
 	var tim = setTimeout(rePlay, 1000);
 	if(time < 0) {
 		time = 0
