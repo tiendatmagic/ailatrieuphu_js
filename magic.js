@@ -2,7 +2,7 @@
 var ques = 0;
 var score = 0;
 var correct = 0;
-var selectan = 0;
+var selectan = 1;
 var question = document.getElementsByClassName("question")[0];
 var answer_1 = document.getElementsByClassName("answer_1")[0];
 var answer_2 = document.getElementsByClassName("answer_2")[0];
@@ -27,8 +27,13 @@ function fstart() {
     
 
     
-   
+   // selectan = 0;
    // time = 15;
+   setTimeout(function() {
+    selectan = 0;
+    rePlay();
+   },1000);
+   
     musicbg.pause();
     start.style.display = 'none';
     var math = Math.ceil(Math.random() * 30);
@@ -40,7 +45,7 @@ function fstart() {
     answer_2.style.backgroundColor = "rgb(105,114,255)";
     answer_3.style.backgroundColor = "rgb(105,114,255)";
     answer_4.style.backgroundColor = "rgb(105,114,255)";
-
+   
 
     if (numberquestion === 15) {
         winner();
@@ -48,7 +53,7 @@ function fstart() {
     }
 
     else {
-        rePlay();
+        
 
         switch (math) {
             case 1:
@@ -409,10 +414,7 @@ function winner() {
     e.appendChild(document.createTextNode(money));
 }
 
-function fout() {
-    selectan = 0;
-    answer_1.style.backgroundColor = "rgb(105,114,255)";
-}
+
 
 function lose() {
     if (correct === 1) {
@@ -538,12 +540,11 @@ answer_1.addEventListener("click", function () {
 
             if (correct === 1) {
                 answer_1.style.backgroundColor = "deeppink";
-                selectan = 1;
+               
                 correctt.play();
                 setTimeout(function () {
                     fmoney();
                     fstart();
-                    selectan = 0;
                 }, 2000);
             }
             else {
@@ -571,12 +572,11 @@ answer_2.addEventListener("click", function () {
             if (correct === 2) {
 
                 answer_2.style.backgroundColor = "deeppink";
-                selectan = 1;
+                //selectan = 1;
                 correctt.play();
                 setTimeout(function () {
                     fmoney();
-                    fstart();
-                    selectan = 0;
+                     fstart();
                 }, 2000);
             }
             else {
@@ -603,12 +603,11 @@ answer_3.addEventListener("click", function () {
             //
             if (correct === 3) {
                 answer_3.style.backgroundColor = "deeppink";
-                selectan = 1;
+               
                 correctt.play();
                 setTimeout(function () {
                     fmoney();
-                    fstart();
-                    selectan = 0;
+                     fstart();
                 }, 2000);
             }
             else {
@@ -635,13 +634,11 @@ answer_4.addEventListener("click", function () {
             //
             if (correct === 4) {
                 answer_4.style.backgroundColor = "deeppink";
-                selectan = 1;
+               
                 correctt.play();
                 setTimeout(function () {
                     fmoney();
-                    fstart();
-                    selectan = 0;
-                    
+                     fstart();
                 }, 2000);
             }
             else {
