@@ -39,8 +39,15 @@ function fstart() {
 	} else {
 		setTimeout(function() {
 			selectan = 0;
-			rePlay();
+			
+			
 		}, 1000);
+
+		setTimeout(function() {
+			
+			rePlay();
+			
+		}, 1500);
 		switch(math) {
 			case 1:
 				question.innerText = question_1.question;

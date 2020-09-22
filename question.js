@@ -272,7 +272,7 @@ var question_39 = {
 	answer_d: "Tất cả đều đúng",
 }
 var question_40 = {
-	question: "Trong MS Excel 2010; sau khi nhập dữ liệu cho một ô, để chuyển con trỏ sang ô bên phải thì nhấn phím?",
+	question: "Trong Excel, sau khi nhập dữ liệu cho một ô, để chuyển con trỏ sang ô bên phải thì nhấn phím",
 	answer_a: "Tab",
 	answer_b: "Delete",
 	answer_c: "Esc",
