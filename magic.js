@@ -19,6 +19,7 @@ var correctt = document.getElementById("ctrue");
 var ncorrectt = document.getElementById("cfalse");
 var cmuss = document.getElementById("cmus");
 var cinfo = document.getElementById("cinfo");
+var cover = document.getElementById("cover");
 window.onload = function () {
 	musicbg.play();
 };
@@ -55,6 +56,7 @@ function over() {
 	document.getElementById("gameover").appendChild(e);
 	e.appendChild(document.createTextNode(money));
 	cmuss.pause();
+	cover.play();
 }
 
 function lose() {
