@@ -16,12 +16,14 @@ var musicbg = document.getElementById("musicbg");
 var waitingg = document.getElementById("waiting");
 var correctt = document.getElementById("ctrue");
 var ncorrectt = document.getElementById("cfalse");
+var cmuss = document.getElementById("cmus");
 window.onload = function() {
 	musicbg.play();
 };
 
 function fstart() {
-	musicbg.pause();
+    musicbg.pause();
+    cmuss.play();
 	start.style.display = 'none';
 	var math = Math.ceil(Math.random() * 40);
 	order = math;
@@ -426,7 +428,8 @@ function winner() {
 	document.getElementById("gameover").appendChild(e);
 	e.appendChild(document.createTextNode("Bạn đã phá đảo thành công game này, số tiền của bạn: "));
 	document.getElementById("gameover").appendChild(e);
-	e.appendChild(document.createTextNode(money));
+    e.appendChild(document.createTextNode(money));
+    cmuss.pause();
 }
 
 function over() {
@@ -435,7 +438,8 @@ function over() {
 	document.getElementById("gameover").appendChild(e);
 	e.appendChild(document.createTextNode("Bạn ngu vcl, tiền nè: "));
 	document.getElementById("gameover").appendChild(e);
-	e.appendChild(document.createTextNode(money));
+    e.appendChild(document.createTextNode(money));
+    cmuss.pause();
 }
 
 function lose() {

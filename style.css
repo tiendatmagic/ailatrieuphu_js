@@ -104,16 +104,8 @@ b {
 @media only screen and (max-width: 600px) {
 	#answer div {
 
-		width: 340px !important;
+		width: 100% !important;
 	
 	}
 }
 
-@media only screen and (max-width: 340px) {
-	#answer div {
-
-		width: 250px !important;
-		
-
-	}
-}

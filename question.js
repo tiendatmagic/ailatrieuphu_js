@@ -216,7 +216,7 @@ var question_31 = {
 	answer_d: "0",
 }
 var question_32 = {
-	question: "Dịch vụ lưu trữ đám mây của Onedrive là gì?",
+	question: "Dịch vụ lưu trữ đám mây của Apple là gì?",
 	answer_a: "Google Drive",
 	answer_b: "OneDrive",
 	answer_c: "Fshare",
