@@ -13,7 +13,10 @@ var numberquestion = 0;
 var order = 1;
 var money = 0;
 var help = 0;
-var help1, help2, help3, help4 = 1;
+var help1 = 1;
+var help2 = 1;
+var help3 = 1;
+var help4 = 1;
 var time = 99999;
 var tim;
 var musicbg = document.getElementById("musicbg");
@@ -102,16 +105,17 @@ info.addEventListener("click", finfo);
 
 document.getElementsByClassName("h5050")[0].addEventListener("click", function () {
 	if (selectan === 0) {
-		
-		if(help1 === 0)
+			
+		if(help1 === 1)
 		{
 			document.getElementsByClassName("help")[0].style.backgroundColor = 'deeppink';
 			document.getElementsByClassName("modal")[0].style.display = 'block';
+			help = 1;
+		help1 = 0;
 		}
 		
 	}
-	help = 1;
-	help1 = 0;
+	
 
 });
 
@@ -119,30 +123,34 @@ document.getElementsByClassName("hcall")[0].addEventListener("click", function (
 	if (selectan === 0) {
 		
 
-		if(help2 === 0)
+		if(help2 === 1)
 		{
 			document.getElementsByClassName("help")[1].style.backgroundColor = 'deeppink';
 			document.getElementsByClassName("modal")[0].style.display = 'block';
-		}
-	}
-	help = 1;
+			help = 1;
 	help2 = 0;	
+		}
+		
+	}
+	
 
 });
 
 document.getElementsByClassName("hkg")[0].addEventListener("click", function () {
 	if (selectan === 0) {
 		
+	
 		
-		if(help3 === 0)
+		if(help3 === 1)
 		{
 			document.getElementsByClassName("help")[2].style.backgroundColor = 'deeppink';
 			document.getElementsByClassName("modal")[0].style.display = 'block';
+			help = 1;
+		help3 =0;
 		}
+		
 	}
-	help = 1;
-	help3 = 0;
-
+	
 });
 
 document.getElementsByClassName("close")[0].addEventListener("click", function () {
