@@ -102,8 +102,7 @@ info.addEventListener("click", finfo);
 
 document.getElementsByClassName("h5050")[0].addEventListener("click", function () {
 	if (selectan === 0) {
-		help = 1;
-		help1 = 0;
+		
 		if(help1 === 0)
 		{
 			document.getElementsByClassName("help")[0].style.backgroundColor = 'deeppink';
@@ -111,14 +110,14 @@ document.getElementsByClassName("h5050")[0].addEventListener("click", function (
 		}
 		
 	}
-
+	help = 1;
+	help1 = 0;
 
 });
 
 document.getElementsByClassName("hcall")[0].addEventListener("click", function () {
 	if (selectan === 0) {
-		help = 1;
-		help2 = 0;
+		
 
 		if(help2 === 0)
 		{
@@ -126,14 +125,14 @@ document.getElementsByClassName("hcall")[0].addEventListener("click", function (
 			document.getElementsByClassName("modal")[0].style.display = 'block';
 		}
 	}
-
+	help = 1;
+	help2 = 0;	
 
 });
 
 document.getElementsByClassName("hkg")[0].addEventListener("click", function () {
 	if (selectan === 0) {
-		help = 1;
-		help3 = 0;
+		
 		
 		if(help3 === 0)
 		{
@@ -141,7 +140,8 @@ document.getElementsByClassName("hkg")[0].addEventListener("click", function () 
 			document.getElementsByClassName("modal")[0].style.display = 'block';
 		}
 	}
-
+	help = 1;
+	help3 = 0;
 
 });
 
