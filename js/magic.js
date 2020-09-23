@@ -12,6 +12,7 @@ var start = document.getElementsByClassName("start")[0];
 var numberquestion = 0;
 var order = 1;
 var money = 0;
+var help = 0;
 var time = 99999;
 var musicbg = document.getElementById("musicbg");
 var waitingg = document.getElementById("waiting");
@@ -96,6 +97,16 @@ function finfo() {
 }
 start.addEventListener("click", fstart);
 info.addEventListener("click", finfo);
+
+document.getElementsByClassName("h5050")[0].addEventListener("click" , function() {
+	if (selectan === 0)
+	{
+		help = 1;
+	}
+
+
+});
+
 answer_1.addEventListener("click", function () {
 	selectan += 1;
 	if (selectan === 1) {
