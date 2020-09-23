@@ -109,24 +109,26 @@ info.addEventListener("click", finfo);
 
 document.getElementsByClassName("h5050")[0].addEventListener("click", function () {
 	if (selectan === 0) {
-
+		if(help1 === 1)
+		{
 	document.getElementsByClassName("modal")[0].style.display = 'block';
 	document.getElementsByClassName("qmodal")[0].innerText="Bạn muốn dùng trợ giúp 50/50";
 	
 	help = 1;
+		}
 	}
 });
 document.getElementsByClassName("btnco")[0].addEventListener("click",function() {	
 	if (help === 1)
 	{
 		helpp1();
-	}
+	}		
 
 	if (help === 2)
 	{
 		helpp2();
 	}
-
+	document.getElementsByClassName("modal")[0].style.display = 'none';
 });
 function helpp1() {
 	

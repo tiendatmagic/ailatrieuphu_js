@@ -16,7 +16,7 @@ function fstart() {
 	} else {
 		setTimeout(function() {
 			selectan = 0;
-		}, 1000);
+		}, 1400);
 		setTimeout(function() {
 			//rePlay();
 			tim = setInterval(rePlay, 1000);
