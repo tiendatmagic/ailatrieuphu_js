@@ -22,6 +22,7 @@ var tim;
 var he1;
 var he2;
 var he3;
+var ck=0;
 var musicbg = document.getElementById("musicbg");
 var waitingg = document.getElementById("waiting");
 var correctt = document.getElementById("ctrue");
@@ -108,13 +109,34 @@ info.addEventListener("click", finfo);
 
 document.getElementsByClassName("h5050")[0].addEventListener("click", function () {
 	if (selectan === 0) {
+
+	document.getElementsByClassName("modal")[0].style.display = 'block';
+	document.getElementsByClassName("qmodal")[0].innerText="Bạn muốn dùng trợ giúp 50/50";
+	
+	help = 1;
+	}
+});
+document.getElementsByClassName("btnco")[0].addEventListener("click",function() {	
+	if (help === 1)
+	{
+		helpp1();
+	}
+
+	if (help === 2)
+	{
+		helpp2();
+	}
+
+});
+function helpp1() {
+	
 			
 		if(help1 === 1)
 		{
 			document.getElementsByClassName("help")[0].style.backgroundColor = 'deeppink';
-			document.getElementsByClassName("modal")[0].style.display = 'block';
-			help = 1;
-	//	help1 = 0;
+			
+			
+		help1 = 0;
 	 he1 =setInterval(function(){ 
 		time++;
 	
@@ -122,11 +144,8 @@ document.getElementsByClassName("h5050")[0].addEventListener("click", function (
 		
 		}
 		
-	}
 	
-
-});
-
+}
 document.getElementsByClassName("hcall")[0].addEventListener("click", function () {
 	if (selectan === 0) {
 		
@@ -135,8 +154,8 @@ document.getElementsByClassName("hcall")[0].addEventListener("click", function (
 		{
 			document.getElementsByClassName("help")[1].style.backgroundColor = 'deeppink';
 			document.getElementsByClassName("modal")[0].style.display = 'block';
-			help = 1;
-	//help2 = 0;
+			
+	help2 = 0;
 	 he2 = setInterval(function(){ 
 		time++;
 	
@@ -157,8 +176,8 @@ document.getElementsByClassName("hkg")[0].addEventListener("click", function () 
 		{
 			document.getElementsByClassName("help")[2].style.backgroundColor = 'deeppink';
 			document.getElementsByClassName("modal")[0].style.display = 'block';
-			help = 1;
-		//help3 =0;
+			
+		help3 =0;
 		he3 = setInterval(function(){ 
 			time++;
 		
@@ -169,18 +188,19 @@ document.getElementsByClassName("hkg")[0].addEventListener("click", function () 
 	
 });
 
-document.getElementsByClassName("close")[0].addEventListener("click", function () {
+document.getElementsByClassName("close")[0].addEventListener("click", close);
+document.getElementsByClassName("close")[1].addEventListener("click", close);
+function close() {
 	document.getElementsByClassName("modal")[0].style.display = 'none';
 	clearInterval(he1);
 	clearInterval(he2);
 	clearInterval(he3);
-	
-});
+}
 /*
 document.getElementsByClassName("hkgg")[0].addEventListener("click" , function() {
 	if (selectan === 0)
 	{
-		help = 1;
+		
 		document.getElementsByClassName("help")[3].style.backgroundColor='deeppink';
 	}
 

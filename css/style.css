@@ -164,6 +164,17 @@ tr {
 	cursor: pointer;
 }
 
+.button {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.button > input {
+	padding: 20px;
+	margin-top:70px;
+	margin-bottom: 0px;
+}
+
 @media only screen and (max-width: 600px) {
 	#answer div {
 
