@@ -11,6 +11,11 @@ function fstart() {
 	answer_2.style.backgroundColor = "rgb(105,114,255)";
 	answer_3.style.backgroundColor = "rgb(105,114,255)";
 	answer_4.style.backgroundColor = "rgb(105,114,255)";
+
+	answer_1.style.color = "black";
+	answer_2.style.color = "black";
+	answer_3.style.color = "black";
+	answer_4.style.color = "black";
 	if(numberquestion === 15) {
 		winner();
 	} else {

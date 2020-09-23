@@ -115,6 +115,7 @@ document.getElementsByClassName("h5050")[0].addEventListener("click", function (
 
 			help = 1;
 		}
+
 	}
 });
 document.getElementsByClassName("btnco")[0].addEventListener("click", function () {
@@ -145,75 +146,106 @@ function helpp1() {
 		}, 1000);
 
 	}
-	if (correct === 1) {
-		answer_1.style.backgroundColor = "yellow";
-		var myArray = [2, 3, 4];
-		var rand = myArray[Math.floor(Math.random() * myArray.length)];
-		if (rand == 2) {
-			answer_2.style.backgroundColor = "yellow";
-		} 
-		
-		else if (rand == 3) {
-			answer_3.style.backgroundColor = "yellow";
-		}  
+	
 
-		else if (rand == 4) {
-			answer_4.style.backgroundColor = "yellow";
-		} 
-	}
-
-	else if (correct === 2) {
-		answer_2.style.backgroundColor = "yellow";
-		var myArray = [1, 3, 4];
-		var rand = myArray[Math.floor(Math.random() * myArray.length)];
-		if (rand == 1) {
+	setTimeout(function () {
+		if (correct === 1) {
 			answer_1.style.backgroundColor = "yellow";
-		} 
-		
-		else if (rand == 3) {
-			answer_3.style.backgroundColor = "yellow";
-		}  
+			var myArray = [2, 3, 4];
+			var rand = myArray[Math.floor(Math.random() * myArray.length)];
+			if (rand == 2) {
+				answer_2.style.backgroundColor = "yellow";
+			
+				answer_3.style.backgroundColor = "black";
+				answer_4.style.backgroundColor = "black";
+			}
+	
+			else if (rand == 3) {
+				answer_3.style.backgroundColor = "yellow";
+				answer_2.style.backgroundColor = "black";
+				answer_4.style.backgroundColor = "black";
 
-		else if (rand == 4) {
-			answer_4.style.backgroundColor = "yellow";
-		} 
-	}
-
-	else if (correct === 3) {
-		answer_3.style.backgroundColor = "yellow";
-		var myArray = [1, 2, 4];
-		var rand = myArray[Math.floor(Math.random() * myArray.length)];
-		if (rand == 1) {
-			answer_1.style.backgroundColor = "yellow";
-		} 
-		
-		else if (rand == 2) {
+			}
+	
+			else if (rand == 4) {
+				answer_4.style.backgroundColor = "yellow";
+				answer_2.style.backgroundColor = "black";
+				answer_3.style.backgroundColor = "black";
+			}
+		}
+	
+		else if (correct === 2) {
 			answer_2.style.backgroundColor = "yellow";
-		}  
-
-		else if (rand == 4) {
-			answer_4.style.backgroundColor = "yellow";
-		} 
-	}
-
-	else if (correct === 4) {
-		answer_4.style.backgroundColor = "yellow";
-		var myArray = [1, 2, 3];
-		var rand = myArray[Math.floor(Math.random() * myArray.length)];
-		if (rand == 1) {
-			answer_1.style.backgroundColor = "yellow";
-		} 
-		
-		else if (rand == 2) {
-			answer_2.style.backgroundColor = "yellow";
-		}  
-
-		else if (rand == 3) {	
+			var myArray = [1, 3, 4];
+			var rand = myArray[Math.floor(Math.random() * myArray.length)];
+			if (rand == 1) {
+				answer_1.style.backgroundColor = "yellow";
+				answer_4.style.backgroundColor = "black";
+				answer_3.style.backgroundColor = "black";
+			}
+	
+			else if (rand == 3) {
+				answer_3.style.backgroundColor = "yellow";
+				answer_4.style.backgroundColor = "black";
+				answer_1.style.backgroundColor = "black";
+			}
+	
+			else if (rand == 4) {
+				answer_4.style.backgroundColor = "yellow";
+				answer_1.style.backgroundColor = "black";
+				answer_3.style.backgroundColor = "black";
+			}
+		}
+	
+		else if (correct === 3) {
 			answer_3.style.backgroundColor = "yellow";
-		} 
-	}
+			var myArray = [1, 2, 4];
+			var rand = myArray[Math.floor(Math.random() * myArray.length)];
+			if (rand == 1) {
+				answer_1.style.backgroundColor = "yellow";
+				answer_2.style.backgroundColor = "black";
+				answer_4.style.backgroundColor = "black";
+			}
+	
+			else if (rand == 2) {
+				answer_2.style.backgroundColor = "yellow";
+				answer_1.style.backgroundColor = "black";
+				answer_4.style.backgroundColor = "black";
+			}
+	
+			else if (rand == 4) {
+				answer_4.style.backgroundColor = "yellow";
+				answer_1.style.backgroundColor = "black";
+				answer_2.style.backgroundColor = "black";
+			}
+		}
+	
+		else if (correct === 4) {
+			answer_4.style.backgroundColor = "yellow";
+			var myArray = [1, 2, 3];
+			var rand = myArray[Math.floor(Math.random() * myArray.length)];
+			if (rand == 1) {
+				answer_1.style.backgroundColor = "yellow";
+				answer_2.style.backgroundColor = "black";
+				answer_3.style.backgroundColor = "black";
+			}
+	
+			else if (rand == 2) {
+				answer_2.style.backgroundColor = "yellow";
+				answer_1.style.backgroundColor = "black";
+				answer_3.style.backgroundColor = "black";
+			}
+	
+			else if (rand == 3) {
+				answer_3.style.backgroundColor = "yellow";
+				answer_2.style.backgroundColor = "black";
+				answer_1.style.backgroundColor = "black";
+			}
+		}
 
-	setTimeout(close, 2000);
+
+		close();
+	}, 2000);
 
 }
 
