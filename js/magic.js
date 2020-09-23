@@ -128,6 +128,11 @@ document.getElementsByClassName("btnco")[0].addEventListener("click",function() 
 	{
 		helpp2();
 	}
+
+	if (help === 3)
+	{
+		helpp3();
+	}
 	document.getElementsByClassName("modal")[0].style.display = 'none';
 });
 function helpp1() {
@@ -148,46 +153,87 @@ function helpp1() {
 		
 	
 }
-document.getElementsByClassName("hcall")[0].addEventListener("click", function () {
-	if (selectan === 0) {
-		
 
-		if(help2 === 1)
-		{
-			document.getElementsByClassName("help")[1].style.backgroundColor = 'deeppink';
-			document.getElementsByClassName("modal")[0].style.display = 'block';
-			
-	help2 = 0;
-	 he2 = setInterval(function(){ 
-		time++;
+function helpp2() {
 	
-	}, 1000);
-		}
+			
+	if(help2 === 1)
+	{
+		document.getElementsByClassName("help")[1].style.backgroundColor = 'deeppink';
 		
+		
+	help2 = 0;
+ he2 =setInterval(function(){ 
+	time++;
+
+}, 1000);
+	
 	}
 	
 
+}
+
+function helpp3() {
+	
+			
+	if(help3 === 1)
+	{
+		document.getElementsByClassName("help")[2].style.backgroundColor = 'deeppink';
+		
+		
+	help3 = 0;
+ he3 =setInterval(function(){ 
+	time++;
+
+}, 1000);
+	
+	}
+	
+
+}
+
+/*
+function helpp4() {
+	
+			
+	if(help3 === 1)
+	{
+		document.getElementsByClassName("help")[3].style.backgroundColor = 'deeppink';
+		
+		
+	help4 = 0;
+ he4 =setInterval(function(){ 
+	time++;
+
+}, 1000);
+	
+	}
+	
+
+}
+*/
+document.getElementsByClassName("hcall")[0].addEventListener("click", function () {
+	if (selectan === 0) {
+		if(help2 === 1)
+		{
+	document.getElementsByClassName("modal")[0].style.display = 'block';
+	document.getElementsByClassName("qmodal")[0].innerText="Bạn muốn dùng trợ giúp gọi điện thoại cho người thân?";
+	
+	help = 2;
+		}
+	}
 });
 
 document.getElementsByClassName("hkg")[0].addEventListener("click", function () {
 	if (selectan === 0) {
-		
-	
-		
 		if(help3 === 1)
 		{
-			document.getElementsByClassName("help")[2].style.backgroundColor = 'deeppink';
-			document.getElementsByClassName("modal")[0].style.display = 'block';
-			
-		help3 =0;
-		he3 = setInterval(function(){ 
-			time++;
-		
-		}, 1000);
-		}
-		
-	}
+	document.getElementsByClassName("modal")[0].style.display = 'block';
+	document.getElementsByClassName("qmodal")[0].innerText="Bạn muốn dùng hỏi ý kiến khán giả?";
 	
+	help = 3;
+		}
+	}
 });
 
 document.getElementsByClassName("close")[0].addEventListener("click", close);
