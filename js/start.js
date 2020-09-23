@@ -2,7 +2,7 @@ function fstart() {
 	musicbg.pause();
 	cmuss.play();
 	start.style.display = 'none';
-	var math = Math.ceil(Math.random() * 40);
+	var math = Math.ceil(Math.random() * 50);
 	order = math;
 	document.getElementsByClassName("cau")[0].innerText = "Câu:";
 	document.getElementById("questionanswer").style.display = 'block';
@@ -472,7 +472,7 @@ function fstart() {
 				correct = 3;
 				break;
 			default:
-				math = Math.ceil(Math.random() * 40);
+				math = Math.ceil(Math.random() * 50);
 				break;
 		}
 		document.getElementsByClassName("numberquestion")[0].innerHTML = numberquestion;

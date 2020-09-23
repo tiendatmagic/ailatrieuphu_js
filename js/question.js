@@ -115,7 +115,7 @@ var question_17 = {
 	answer_a: "1048576",
 	answer_b: "65536",
 	answer_c: "696969",
-	answer_d: "Không có đán án nào đúng",
+	answer_d: "Không có đán áp nào đúng",
 }
 var question_18 = {
 	question: "Trong Excel, giả sử ô A1 của bảng tính lưu trị ngày 30/10/2020. Kết quả hàm =MONTH(A1) là bao nhiêu?",
