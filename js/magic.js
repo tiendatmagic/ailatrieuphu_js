@@ -13,6 +13,7 @@ var numberquestion = 0;
 var order = 1;
 var money = 0;
 var help = 0;
+var help1, help2, help3, help4 = 1;
 var time = 99999;
 var musicbg = document.getElementById("musicbg");
 var waitingg = document.getElementById("waiting");
@@ -82,31 +83,66 @@ function finfo() {
 	musicbg.pause();
 	cinfo.play();
 	info.style.display = 'none';
-	
-	document.getElementsByClassName("table")[0].style.display='flex';
-	setTimeout(function() {
-		document.querySelector("table tr:nth-child(2)").style.backgroundColor='red';
-		document.querySelector("table tr:nth-child(7)").style.backgroundColor='red';
-		document.querySelector("table tr:nth-child(12)").style.backgroundColor='red';
-	},4500);
 
-	setTimeout(function() {
-		document.getElementsByClassName("table")[0].style.display='none';
+	document.getElementsByClassName("table")[0].style.display = 'flex';
+	setTimeout(function () {
+		document.querySelector("table tr:nth-child(2)").style.backgroundColor = 'red';
+		document.querySelector("table tr:nth-child(7)").style.backgroundColor = 'red';
+		document.querySelector("table tr:nth-child(12)").style.backgroundColor = 'red';
+	}, 4500);
+
+	setTimeout(function () {
+		document.getElementsByClassName("table")[0].style.display = 'none';
 		start.style.display = 'flex';
-	},14500)
+	}, 14500)
 }
 start.addEventListener("click", fstart);
 info.addEventListener("click", finfo);
 
-document.getElementsByClassName("h5050")[0].addEventListener("click" , function() {
-	if (selectan === 0)
-	{
+document.getElementsByClassName("h5050")[0].addEventListener("click", function () {
+	if (selectan === 0) {
 		help = 1;
+		document.getElementsByClassName("help")[0].style.backgroundColor = 'deeppink';
+		document.getElementsByClassName("modal")[0].style.display = 'block';
 	}
 
 
 });
 
+document.getElementsByClassName("hcall")[0].addEventListener("click", function () {
+	if (selectan === 0) {
+		help = 1;
+		document.getElementsByClassName("help")[1].style.backgroundColor = 'deeppink';
+		document.getElementsByClassName("modal")[0].style.display = 'block';
+	}
+
+
+});
+
+document.getElementsByClassName("hkg")[0].addEventListener("click", function () {
+	if (selectan === 0) {
+		help = 1;
+		document.getElementsByClassName("help")[2].style.backgroundColor = 'deeppink';
+		document.getElementsByClassName("modal")[0].style.display = 'block';
+	}
+
+
+});
+
+document.getElementsByClassName("close")[0].addEventListener("click", function () {
+	document.getElementsByClassName("modal")[0].style.display = 'none';
+});
+/*
+document.getElementsByClassName("hkgg")[0].addEventListener("click" , function() {
+	if (selectan === 0)
+	{
+		help = 1;
+		document.getElementsByClassName("help")[3].style.backgroundColor='deeppink';
+	}
+
+
+});
+*/
 answer_1.addEventListener("click", function () {
 	selectan += 1;
 	if (selectan === 1) {

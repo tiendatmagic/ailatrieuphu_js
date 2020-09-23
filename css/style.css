@@ -133,6 +133,36 @@ tr {
 	justify-content: center;
 	align-items: center;
 }  
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.modal-content {
+	width: 80%;
+	height: 10%;
+	background-color: deeppink;
+
+	margin: 0 auto;
+	margin-top: 300px;
+}
+
+.close {
+	float: right;
+	font-size: 30px;
+	color: white;
+}
+
+.close:hover,
+.close:focus {
+	cursor: pointer;
+}
 
 @media only screen and (max-width: 600px) {
 	#answer div {
