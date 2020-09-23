@@ -278,3 +278,91 @@ var question_40 = {
 	answer_c: "Esc",
 	answer_d: "F2",
 }
+
+var question_41 = {
+	question: "Trong Excel, công thức =IF(A3 + A4='Tiendatmagic dep trai',TRUE,FALSE) ra kết quả gì, biết rằng ô A3 chứa nội dung 'Tiendatmagic', ô A4 chứa nội dung 'deptrai'",
+	answer_a: "TRUE",
+	answer_b: "#VALUE!",
+	answer_c: "FALSE",
+	answer_d: "#N/A",
+}
+
+var question_42 = {
+	question: "Trong Excel, =IF(ROUND(A3,-1)=A4,TRUE,FALSE) ra kết quả gì, biết rằng ô A3 là 69.69, ô A4 là 70",
+	answer_a: "FALSE",
+	answer_b: "TRUE",
+	answer_c: "#VALUE!",
+	answer_d: "#N/A",
+}
+
+var question_43 = {
+	question: "Trong Excel, tại ô A2 có giá trị là số 10; ô B2 có giá trị là số 3. Tại ô C2 gõ công thức =MOD(A2,B2) thì nhận được kết quả",
+	answer_a: "10",
+	answer_b: "1",
+	answer_c: "3",
+	answer_d: "#VALUE!",
+}
+
+var question_44 = {
+	question: "Trong Excel, tại ô A2 có giá trị là số 6; ô B2 có giá trị là số 9. Tại ô C2 gõ công thức =MOD(A2,B2) thì nhận được kết quả",
+	answer_a: "69",
+	answer_b: "9",
+	answer_c: "6",
+	answer_d: "#DIV/0!",
+}
+
+var question_45 = {
+	question: "Trong Excel, khi sử dụng hàm SUM thì ta có thể",
+	answer_a: "Sử dụng tối đa là một tham số",
+	answer_b: "Sử dụng tối đa là hai tham số",
+	answer_c: "Sử dụng tối đa là 255 tham số",
+	answer_d: "Không sử dụng tham số nào",
+}
+
+var question_46 = {
+	question: "Trong Excel, khi nhập liệu thì giá trị nào sau đây được hiểu là dữ liệu dạng chuỗi",
+	answer_a: "1/1/2020",
+	answer_b: "31/04/2019",
+	answer_c: "0001",
+	answer_d: "1000",
+}
+
+var question_46 = {
+	question: "Trong Excel, công thức =1+1*A1+(-1) ra kết quả gì, biết rằng ô A1 là 2",
+	answer_a: "3",
+	answer_b: "0",
+	answer_c: "2",
+	answer_d: "4",
+}
+
+var question_47 = {
+	question: "Trong Windows, để thiết đặt lại hệ thống, ta chọn chức năng",
+	answer_a: "Control Windows",
+	answer_b: "Control Desktop",
+	answer_c: "Control Panel",
+	answer_d: "Control Center",
+}
+
+var question_48 = {
+	question: "Trong Excel, công thức =IF(LEN(A1)='12',TRUE,FALSE) ra kết quả gì, biết rằng ô A1 là Tiendatmagic",
+	answer_a: "12",
+	answer_b: "TRUE",
+	answer_c: "FALSE",
+	answer_d: "#DIV/0!",
+}
+
+var question_49 = {
+	question: "Trong Excel, hàm Today() trả về:",
+	answer_a: "Số ngày trong tháng",
+	answer_b: "Số tháng trong năm",
+	answer_c: "Ngày hiện hành của hệ thống",
+	answer_d: "Số giờ trong ngày",
+}
+
+var question_50 = {
+	question: "Trong bảng tính Excel, tại ô A2 có giá trị số 25; Tại ô B2 gõ vào công thức =SQRT(A2) thì nhận được kết quả:",
+	answer_a: "0",
+	answer_b: "125",
+	answer_c: "5",
+	answer_d: "#DIV/0!",
+}
