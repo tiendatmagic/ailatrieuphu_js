@@ -102,8 +102,13 @@ info.addEventListener("click", finfo);
 document.getElementsByClassName("h5050")[0].addEventListener("click", function () {
 	if (selectan === 0) {
 		help = 1;
-		document.getElementsByClassName("help")[0].style.backgroundColor = 'deeppink';
-		document.getElementsByClassName("modal")[0].style.display = 'block';
+		help1 = 0;
+		if(help1 === 0)
+		{
+			document.getElementsByClassName("help")[0].style.backgroundColor = 'deeppink';
+			document.getElementsByClassName("modal")[0].style.display = 'block';
+		}
+		
 	}
 
 
@@ -112,8 +117,13 @@ document.getElementsByClassName("h5050")[0].addEventListener("click", function (
 document.getElementsByClassName("hcall")[0].addEventListener("click", function () {
 	if (selectan === 0) {
 		help = 1;
-		document.getElementsByClassName("help")[1].style.backgroundColor = 'deeppink';
-		document.getElementsByClassName("modal")[0].style.display = 'block';
+		help2 = 0;
+
+		if(help2 === 0)
+		{
+			document.getElementsByClassName("help")[1].style.backgroundColor = 'deeppink';
+			document.getElementsByClassName("modal")[0].style.display = 'block';
+		}
 	}
 
 
@@ -122,8 +132,13 @@ document.getElementsByClassName("hcall")[0].addEventListener("click", function (
 document.getElementsByClassName("hkg")[0].addEventListener("click", function () {
 	if (selectan === 0) {
 		help = 1;
-		document.getElementsByClassName("help")[2].style.backgroundColor = 'deeppink';
-		document.getElementsByClassName("modal")[0].style.display = 'block';
+		help3 = 0;
+		
+		if(help3 === 0)
+		{
+			document.getElementsByClassName("help")[2].style.backgroundColor = 'deeppink';
+			document.getElementsByClassName("modal")[0].style.display = 'block';
+		}
 	}
 
 
