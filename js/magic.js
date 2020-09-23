@@ -22,12 +22,12 @@ var tim;
 var he1;
 var he2;
 var he3;
-var ck=0;
+var ck = 0;
 var musicbg = document.getElementById("musicbg");
 var waitingg = document.getElementById("waiting");
 var correctt = document.getElementById("ctrue");
 var ncorrectt = document.getElementById("cfalse");
-var cmuss = document.getElementById("cmus");	
+var cmuss = document.getElementById("cmus");
 var cinfo = document.getElementById("cinfo");
 var cover = document.getElementById("cover");
 window.onload = function () {
@@ -38,7 +38,7 @@ window.onload = function () {
 
 function rePlay() {
 	document.getElementsByClassName("time")[0].innerHTML = "Còn: " + time-- + " giây";
-	
+
 	if (time < 0) {
 		time = 0
 		lose();
@@ -109,86 +109,79 @@ info.addEventListener("click", finfo);
 
 document.getElementsByClassName("h5050")[0].addEventListener("click", function () {
 	if (selectan === 0) {
-		if(help1 === 1)
-		{
-	document.getElementsByClassName("modal")[0].style.display = 'block';
-	document.getElementsByClassName("qmodal")[0].innerText="Bạn muốn dùng trợ giúp 50/50";
-	
-	help = 1;
+		if (help1 === 1) {
+			document.getElementsByClassName("modal")[0].style.display = 'block';
+			document.getElementsByClassName("qmodal")[0].innerText = "Bạn muốn dùng trợ giúp 50/50";
+
+			help = 1;
 		}
 	}
 });
-document.getElementsByClassName("btnco")[0].addEventListener("click",function() {	
-	if (help === 1)
-	{
+document.getElementsByClassName("btnco")[0].addEventListener("click", function () {
+	if (help === 1) {
 		helpp1();
-	}		
+	}
 
-	if (help === 2)
-	{
+	if (help === 2) {
 		helpp2();
 	}
 
-	if (help === 3)
-	{
+	if (help === 3) {
 		helpp3();
 	}
 	document.getElementsByClassName("modal")[0].style.display = 'none';
 });
 function helpp1() {
-	
-			
-		if(help1 === 1)
-		{
-			document.getElementsByClassName("help")[0].style.backgroundColor = 'deeppink';
-			
-			
+
+
+	if (help1 === 1) {
+		document.getElementsByClassName("help")[0].style.backgroundColor = 'deeppink';
+
+
 		help1 = 0;
-	 he1 =setInterval(function(){ 
-		time++;
-	
-	}, 1000);
-		
-		}
-		
-	
+		he1 = setInterval(function () {
+			time++;
+
+		}, 1000);
+
+	}
+
+
 }
 
 function helpp2() {
-	
-			
-	if(help2 === 1)
-	{
-		document.getElementsByClassName("help")[1].style.backgroundColor = 'deeppink';
-		
-		
-	help2 = 0;
- he2 =setInterval(function(){ 
-	time++;
 
-}, 1000);
-	
+
+	if (help2 === 1) {
+		document.getElementsByClassName("help")[1].style.backgroundColor = 'deeppink';
+
+
+		help2 = 0;
+		he2 = setInterval(function () {
+			time++;
+
+		}, 1000);
+
 	}
-	
+
 
 }
 
 function helpp3() {
-	
-			
-	if(help3 === 1)
-	{
-		document.getElementsByClassName("help")[2].style.backgroundColor = 'deeppink';
-		
-		
-	help3 = 0;
- he3 =setInterval(function(){ 
-	time++;
 
-}, 1000);
-	
+
+	if (help3 === 1) {
+		document.getElementsByClassName("help")[2].style.backgroundColor = 'deeppink';
+
+
+		help3 = 0;
+		he3 = setInterval(function () {
+			time++;
+
+		}, 1000);
+
 	}
-	
+
 
 }
 
@@ -214,24 +207,22 @@ function helpp4() {
 */
 document.getElementsByClassName("hcall")[0].addEventListener("click", function () {
 	if (selectan === 0) {
-		if(help2 === 1)
-		{
-	document.getElementsByClassName("modal")[0].style.display = 'block';
-	document.getElementsByClassName("qmodal")[0].innerText="Bạn muốn dùng trợ giúp gọi điện thoại cho người thân?";
-	
-	help = 2;
+		if (help2 === 1) {
+			document.getElementsByClassName("modal")[0].style.display = 'block';
+			document.getElementsByClassName("qmodal")[0].innerText = "Bạn muốn dùng trợ giúp gọi điện thoại cho người thân?";
+
+			help = 2;
 		}
 	}
 });
 
 document.getElementsByClassName("hkg")[0].addEventListener("click", function () {
 	if (selectan === 0) {
-		if(help3 === 1)
-		{
-	document.getElementsByClassName("modal")[0].style.display = 'block';
-	document.getElementsByClassName("qmodal")[0].innerText="Bạn muốn dùng hỏi ý kiến khán giả?";
-	
-	help = 3;
+		if (help3 === 1) {
+			document.getElementsByClassName("modal")[0].style.display = 'block';
+			document.getElementsByClassName("qmodal")[0].innerText = "Bạn muốn dùng hỏi ý kiến khán giả?";
+
+			help = 3;
 		}
 	}
 });
@@ -260,7 +251,7 @@ answer_1.addEventListener("click", function () {
 	//clearInterval(tim);
 	if (selectan === 1) {
 		waitingg.play();
-		
+
 		time = 15;
 		answer_1.style.backgroundColor = "orange";
 		setTimeout(function () {
@@ -283,7 +274,7 @@ answer_2.addEventListener("click", function () {
 	//clearInterval(tim);
 	if (selectan === 1) {
 		waitingg.play();
-	
+
 		time = 15;
 		answer_2.style.backgroundColor = "orange";
 		setTimeout(function () {
@@ -303,10 +294,10 @@ answer_2.addEventListener("click", function () {
 });
 answer_3.addEventListener("click", function () {
 	selectan += 1;
-//	clearInterval(tim);
+	//	clearInterval(tim);
 	if (selectan === 1) {
 		waitingg.play();
-		
+
 		time = 15;
 		answer_3.style.backgroundColor = "orange";
 		setTimeout(function () {
@@ -326,12 +317,12 @@ answer_3.addEventListener("click", function () {
 });
 answer_4.addEventListener("click", function () {
 	selectan += 1;
-//	clearInterval(tim);
+	//	clearInterval(tim);
 	if (selectan === 1) {
 		waitingg.play();
-		
+
 		time = 15;
-		
+
 		answer_4.style.backgroundColor = "orange";
 		setTimeout(function () {
 			answer_4.style.backgroundColor = "rgb(105,114,255)";
