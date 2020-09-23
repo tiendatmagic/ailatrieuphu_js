@@ -18,7 +18,8 @@ function fstart() {
 			selectan = 0;
 		}, 1000);
 		setTimeout(function() {
-			rePlay();
+			//rePlay();
+			tim = setInterval(rePlay, 1000);
 		}, 1500);
 		switch(math) {
 			case 1:

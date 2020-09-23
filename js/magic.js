@@ -15,11 +15,12 @@ var money = 0;
 var help = 0;
 var help1, help2, help3, help4 = 1;
 var time = 99999;
+var tim;
 var musicbg = document.getElementById("musicbg");
 var waitingg = document.getElementById("waiting");
 var correctt = document.getElementById("ctrue");
 var ncorrectt = document.getElementById("cfalse");
-var cmuss = document.getElementById("cmus");
+var cmuss = document.getElementById("cmus");	
 var cinfo = document.getElementById("cinfo");
 var cover = document.getElementById("cover");
 window.onload = function () {
@@ -30,13 +31,13 @@ window.onload = function () {
 
 function rePlay() {
 	document.getElementsByClassName("time")[0].innerHTML = "Còn: " + time-- + " giây";
-	var tim = setTimeout(rePlay, 1000);
+	
 	if (time < 0) {
 		time = 0
 		lose();
 	}
 	if (selectan === 1) {
-		clearTimeout(tim);
+		clearInterval(tim);
 	}
 }
 
@@ -160,8 +161,10 @@ document.getElementsByClassName("hkgg")[0].addEventListener("click" , function()
 */
 answer_1.addEventListener("click", function () {
 	selectan += 1;
+	//clearInterval(tim);
 	if (selectan === 1) {
 		waitingg.play();
+		
 		time = 15;
 		answer_1.style.backgroundColor = "orange";
 		setTimeout(function () {
@@ -181,8 +184,10 @@ answer_1.addEventListener("click", function () {
 });
 answer_2.addEventListener("click", function () {
 	selectan += 1;
+	//clearInterval(tim);
 	if (selectan === 1) {
 		waitingg.play();
+	
 		time = 15;
 		answer_2.style.backgroundColor = "orange";
 		setTimeout(function () {
@@ -202,8 +207,10 @@ answer_2.addEventListener("click", function () {
 });
 answer_3.addEventListener("click", function () {
 	selectan += 1;
+//	clearInterval(tim);
 	if (selectan === 1) {
 		waitingg.play();
+		
 		time = 15;
 		answer_3.style.backgroundColor = "orange";
 		setTimeout(function () {
@@ -223,9 +230,12 @@ answer_3.addEventListener("click", function () {
 });
 answer_4.addEventListener("click", function () {
 	selectan += 1;
+//	clearInterval(tim);
 	if (selectan === 1) {
 		waitingg.play();
+		
 		time = 15;
+		
 		answer_4.style.backgroundColor = "orange";
 		setTimeout(function () {
 			answer_4.style.backgroundColor = "rgb(105,114,255)";
