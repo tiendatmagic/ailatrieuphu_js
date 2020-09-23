@@ -122,11 +122,11 @@ document.getElementsByClassName("btnco")[0].addEventListener("click", function (
 		helpp1();
 	}
 
-	if (help === 2) {
+	else if (help === 2) {
 		helpp2();
 	}
 
-	if (help === 3) {
+	else if (help === 3) {
 		helpp3();
 	}
 	document.getElementsByClassName("modal")[0].style.display = 'none';
@@ -145,7 +145,75 @@ function helpp1() {
 		}, 1000);
 
 	}
+	if (correct === 1) {
+		answer_1.style.backgroundColor = "yellow";
+		var myArray = [2, 3, 4];
+		var rand = myArray[Math.floor(Math.random() * myArray.length)];
+		if (rand == 2) {
+			answer_2.style.backgroundColor = "yellow";
+		} 
+		
+		else if (rand == 3) {
+			answer_3.style.backgroundColor = "yellow";
+		}  
 
+		else if (rand == 4) {
+			answer_4.style.backgroundColor = "yellow";
+		} 
+	}
+
+	else if (correct === 2) {
+		answer_2.style.backgroundColor = "yellow";
+		var myArray = [1, 3, 4];
+		var rand = myArray[Math.floor(Math.random() * myArray.length)];
+		if (rand == 1) {
+			answer_1.style.backgroundColor = "yellow";
+		} 
+		
+		else if (rand == 3) {
+			answer_3.style.backgroundColor = "yellow";
+		}  
+
+		else if (rand == 4) {
+			answer_4.style.backgroundColor = "yellow";
+		} 
+	}
+
+	else if (correct === 3) {
+		answer_3.style.backgroundColor = "yellow";
+		var myArray = [1, 2, 4];
+		var rand = myArray[Math.floor(Math.random() * myArray.length)];
+		if (rand == 1) {
+			answer_1.style.backgroundColor = "yellow";
+		} 
+		
+		else if (rand == 2) {
+			answer_2.style.backgroundColor = "yellow";
+		}  
+
+		else if (rand == 4) {
+			answer_4.style.backgroundColor = "yellow";
+		} 
+	}
+
+	else if (correct === 4) {
+		answer_4.style.backgroundColor = "yellow";
+		var myArray = [1, 2, 3];
+		var rand = myArray[Math.floor(Math.random() * myArray.length)];
+		if (rand == 1) {
+			answer_1.style.backgroundColor = "yellow";
+		} 
+		
+		else if (rand == 2) {
+			answer_2.style.backgroundColor = "yellow";
+		}  
+
+		else if (rand == 3) {	
+			answer_3.style.backgroundColor = "yellow";
+		} 
+	}
+
+	setTimeout(close, 2000);
 
 }
 
