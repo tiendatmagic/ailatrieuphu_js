@@ -309,18 +309,22 @@ function reCountd() {
 		document.getElementsByClassName("countd")[0].innerHTML = "Còn: " + timec-- + " giây";
 	
 		if (timec < 0) {
-			
+	
 			document.getElementsByClassName("modal-q")[0].style.display='none';
 			clearInterval(tim2);
 			clearInterval(he2);
 			timec = 30;
+			
 		
 		}
 		if (selectan === 1) {
+		
 			document.getElementsByClassName("modal-q")[0].style.display='none';
 			clearInterval(tim2);
 			clearInterval(he2);
+			
 		}
+
 		countdown.play();
 }
 
