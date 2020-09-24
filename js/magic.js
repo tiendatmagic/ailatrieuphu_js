@@ -35,6 +35,7 @@ var cover = document.getElementById("cover");
 var teng = document.getElementById("teng");
 var sta = document.getElementById("sta");
 var countdown = document.getElementById("countdown");
+var hh1 = document.getElementById("hh1");
 window.onload = function () {
 	musicbg.play();
 };
@@ -291,7 +292,7 @@ function helpp1() {
 		teng.play();
 		close();
 	}, 4000);
-
+	hh1.play();
 }
 
 function helpp2() {
