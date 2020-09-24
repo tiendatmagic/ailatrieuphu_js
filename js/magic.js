@@ -18,7 +18,7 @@ var help2 = 1;
 var help3 = 1;
 var help4 = 1;
 var time = 99999;
-var timec = 5;
+var timec = 15;
 var tim;
 var tim2;
 var he1;
@@ -308,12 +308,17 @@ function reCountd() {
 		document.getElementsByClassName("countd")[0].innerHTML = "Còn: " + timec-- + " giây";
 	
 		if (timec < 0) {
-			timec = 0
-			//lose();
+			
+			document.getElementsByClassName("modal-q")[0].style.display='none';
 			clearInterval(tim2);
+			clearInterval(he2);
+			timec = 15;
+		
 		}
 		if (selectan === 1) {
+			document.getElementsByClassName("modal-q")[0].style.display='none';
 			clearInterval(tim2);
+			clearInterval(he2);
 		}
 
 }
