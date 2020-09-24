@@ -33,6 +33,7 @@ var cmuss = document.getElementById("cmus");
 var cinfo = document.getElementById("cinfo");
 var cover = document.getElementById("cover");
 var teng = document.getElementById("teng");
+var sta = document.getElementById("sta");
 var countdown = document.getElementById("countdown");
 window.onload = function () {
 	musicbg.play();
@@ -108,7 +109,15 @@ function finfo() {
 		start.style.display = 'flex';
 	}, 14500)
 }
-start.addEventListener("click", fstart);
+start.addEventListener("click", function() {
+	setTimeout(fstart, 3000);
+});
+
+
+start.addEventListener("click", function() {
+	start.style.display = 'none';
+	sta.play();
+});
 info.addEventListener("click", finfo);
 
 document.getElementsByClassName("h5050")[0].addEventListener("click", function () {
