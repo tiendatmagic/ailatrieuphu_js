@@ -17,7 +17,7 @@ var help1 = 1;
 var help2 = 1;
 var help3 = 1;
 var help4 = 1;
-var time = 99999;
+var time = 15;
 var timec = 30;
 var tim;
 var tim2;
@@ -570,6 +570,7 @@ document.getElementsByClassName("close")[2].addEventListener("click", closeko2);
 document.getElementsByClassName("btnko")[0].addEventListener("click", close);
 function close() {
 	countdown.pause();
+	hh3.pause();
 	document.getElementsByClassName("modal")[0].style.display = 'none';
 	
 	clearInterval(he1);
@@ -590,7 +591,7 @@ function closeko() {
 }
 
 function closeko2() {
-
+	hh3.pause();
 	document.getElementsByClassName("modal-q2")[0].style.display='none';	
 
 	clearInterval(he3);
