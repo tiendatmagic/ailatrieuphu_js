@@ -411,7 +411,7 @@ function close() {
 
 function closeko() {
 
-	
+	countdown.pause();
 	document.getElementsByClassName("modal-q")[0].style.display='none';
 	
 	clearInterval(tim2);
