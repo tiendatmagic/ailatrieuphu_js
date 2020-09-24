@@ -36,6 +36,8 @@ var teng = document.getElementById("teng");
 var sta = document.getElementById("sta");
 var countdown = document.getElementById("countdown");
 var hh1 = document.getElementById("hh1");
+var hh2 = document.getElementById("hh2");
+var hh3 = document.getElementById("hh3");
 window.onload = function () {
 	musicbg.play();
 };
@@ -309,9 +311,13 @@ function helpp2() {
 		}, 1000);
 
 	}
-document.getElementsByClassName("modal-q")[0].style.display='block';
 
-tim2 = setInterval(reCountd, 1000);
+setTimeout(function() {
+	tim2 = setInterval(reCountd, 1000);
+	document.getElementsByClassName("modal-q")[0].style.display='block';
+},2000)
+
+	hh2.play();
 }
 
 function reCountd() {
@@ -319,7 +325,7 @@ function reCountd() {
 		document.getElementsByClassName("countd")[0].innerHTML = "Còn: " + timec-- + " giây";
 	
 		if (timec < 0) {
-	
+			countdown.pause();
 			document.getElementsByClassName("modal-q")[0].style.display='none';
 			clearInterval(tim2);
 			clearInterval(he2);
@@ -327,15 +333,17 @@ function reCountd() {
 			
 		
 		}
-		if (selectan === 1) {
-		
+		else if (selectan === 1) {
+			countdown.pause();
 			document.getElementsByClassName("modal-q")[0].style.display='none';
 			clearInterval(tim2);
 			clearInterval(he2);
 			
 		}
-
+else
+{
 		countdown.play();
+}
 }
 
 function helpp3() {
@@ -507,8 +515,9 @@ setTimeout(function () {
 
 	teng.play();
 	close();
-}, 4000);
+}, 9500);
 //
+hh3.play();
 
 
 }
@@ -560,12 +569,13 @@ document.getElementsByClassName("close")[1].addEventListener("click", close);
 document.getElementsByClassName("close")[2].addEventListener("click", closeko2);
 document.getElementsByClassName("btnko")[0].addEventListener("click", close);
 function close() {
+	countdown.pause();
 	document.getElementsByClassName("modal")[0].style.display = 'none';
 	
 	clearInterval(he1);
 	clearInterval(he2);
 	clearInterval(he3);
-	countdown.pause();
+	
 }
 
 function closeko() {
