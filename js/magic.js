@@ -18,7 +18,7 @@ var help2 = 1;
 var help3 = 1;
 var help4 = 1;
 var time = 99999;
-var timec = 15;
+var timec = 30;
 var tim;
 var tim2;
 var he1;
@@ -33,6 +33,7 @@ var cmuss = document.getElementById("cmus");
 var cinfo = document.getElementById("cinfo");
 var cover = document.getElementById("cover");
 var teng = document.getElementById("teng");
+var countdown = document.getElementById("countdown");
 window.onload = function () {
 	musicbg.play();
 };
@@ -312,7 +313,7 @@ function reCountd() {
 			document.getElementsByClassName("modal-q")[0].style.display='none';
 			clearInterval(tim2);
 			clearInterval(he2);
-			timec = 15;
+			timec = 30;
 		
 		}
 		if (selectan === 1) {
@@ -320,7 +321,7 @@ function reCountd() {
 			clearInterval(tim2);
 			clearInterval(he2);
 		}
-
+		countdown.play();
 }
 
 function helpp3() {
