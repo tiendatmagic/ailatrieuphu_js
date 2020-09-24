@@ -133,7 +133,7 @@ tr {
 	justify-content: center;
 	align-items: center;
 }  
-.modal {
+.modal, .modal-q {
 	display: none;
 	position: fixed;
 	top: 0;
@@ -144,7 +144,7 @@ tr {
 
 }
 
-.modal-content {
+.modal-content, .modal-qcontent {
 	width: 80%;
 	height: 10%;
 	background-color: deeppink;
@@ -153,14 +153,14 @@ tr {
 	margin-top: 300px;
 }
 
-.close {
+.close, .closee {
 	float: right;
 	font-size: 30px;
 	color: white;
 }
 
-.close:hover,
-.close:focus {
+.close:hover, .closee:hover,
+.close:focus, .closee:focus {
 	cursor: pointer;
 }
 

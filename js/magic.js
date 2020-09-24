@@ -18,7 +18,9 @@ var help2 = 1;
 var help3 = 1;
 var help4 = 1;
 var time = 99999;
+var timec = 5;
 var tim;
+var tim2;
 var he1;
 var he2;
 var he3;
@@ -30,6 +32,7 @@ var ncorrectt = document.getElementById("cfalse");
 var cmuss = document.getElementById("cmus");
 var cinfo = document.getElementById("cinfo");
 var cover = document.getElementById("cover");
+var teng = document.getElementById("teng");
 window.onload = function () {
 	musicbg.play();
 };
@@ -146,106 +149,138 @@ function helpp1() {
 		}, 1000);
 
 	}
-	
+
 
 	setTimeout(function () {
 		if (correct === 1) {
-			answer_1.style.backgroundColor = "yellow";
+			answer_1.style.backgroundColor = "rgb(105,114,255)";
 			var myArray = [2, 3, 4];
 			var rand = myArray[Math.floor(Math.random() * myArray.length)];
-			if (rand == 2) {
-				answer_2.style.backgroundColor = "yellow";
-			
-				answer_3.style.backgroundColor = "black";
-				answer_4.style.backgroundColor = "black";
-			}
+			switch(rand) {
+				case 2: {
+					answer_2.style.backgroundColor = "rgb(105,114,255)";
 	
-			else if (rand == 3) {
-				answer_3.style.backgroundColor = "yellow";
-				answer_2.style.backgroundColor = "black";
-				answer_4.style.backgroundColor = "black";
+					answer_3.style.backgroundColor = "black";
+					answer_4.style.backgroundColor = "black";
+					break;
+				}
+	
+				case 3: {
+					answer_3.style.backgroundColor = "rgb(105,114,255)";
+					answer_2.style.backgroundColor = "black";
+					answer_4.style.backgroundColor = "black";
+					break;
+	
+				}
+	
+				case 4: {
+					answer_4.style.backgroundColor = "rgb(105,114,255)";
+					answer_2.style.backgroundColor = "black";
+					answer_3.style.backgroundColor = "black";
+					break;
+				}
+
+				default:
+					break;
 
 			}
-	
-			else if (rand == 4) {
-				answer_4.style.backgroundColor = "yellow";
-				answer_2.style.backgroundColor = "black";
-				answer_3.style.backgroundColor = "black";
-			}
+			
 		}
-	
+
 		else if (correct === 2) {
-			answer_2.style.backgroundColor = "yellow";
+			answer_2.style.backgroundColor = "rgb(105,114,255)";
 			var myArray = [1, 3, 4];
 			var rand = myArray[Math.floor(Math.random() * myArray.length)];
-			if (rand == 1) {
-				answer_1.style.backgroundColor = "yellow";
+			switch(rand) {
+			case 1: {
+				answer_1.style.backgroundColor = "rgb(105,114,255)";
 				answer_4.style.backgroundColor = "black";
 				answer_3.style.backgroundColor = "black";
+				break;
 			}
-	
-			else if (rand == 3) {
-				answer_3.style.backgroundColor = "yellow";
+
+			case 3: {
+				answer_3.style.backgroundColor = "rgb(105,114,255)";
 				answer_4.style.backgroundColor = "black";
 				answer_1.style.backgroundColor = "black";
+				break;
 			}
-	
-			else if (rand == 4) {
-				answer_4.style.backgroundColor = "yellow";
+
+			case 4: {
+				answer_4.style.backgroundColor = "rgb(105,114,255)";
 				answer_1.style.backgroundColor = "black";
 				answer_3.style.backgroundColor = "black";
+				break;
 			}
+			default:
+					break;
 		}
-	
+		}
+
 		else if (correct === 3) {
-			answer_3.style.backgroundColor = "yellow";
+			answer_3.style.backgroundColor = "rgb(105,114,255)";
 			var myArray = [1, 2, 4];
 			var rand = myArray[Math.floor(Math.random() * myArray.length)];
-			if (rand == 1) {
-				answer_1.style.backgroundColor = "yellow";
+			switch(rand) {
+			case 1: {
+				answer_1.style.backgroundColor = "rgb(105,114,255)";
 				answer_2.style.backgroundColor = "black";
 				answer_4.style.backgroundColor = "black";
+				break;
 			}
-	
-			else if (rand == 2) {
-				answer_2.style.backgroundColor = "yellow";
+
+			case 2: {
+				answer_2.style.backgroundColor = "rgb(105,114,255)";
 				answer_1.style.backgroundColor = "black";
 				answer_4.style.backgroundColor = "black";
+				break;
 			}
-	
-			else if (rand == 4) {
-				answer_4.style.backgroundColor = "yellow";
+
+			case 4:{
+				answer_4.style.backgroundColor = "rgb(105,114,255)";
 				answer_1.style.backgroundColor = "black";
 				answer_2.style.backgroundColor = "black";
+				break;
 			}
+			default:
+					break;
 		}
-	
+		}
+
 		else if (correct === 4) {
-			answer_4.style.backgroundColor = "yellow";
+			answer_4.style.backgroundColor = "rgb(105,114,255)";
 			var myArray = [1, 2, 3];
 			var rand = myArray[Math.floor(Math.random() * myArray.length)];
-			if (rand == 1) {
-				answer_1.style.backgroundColor = "yellow";
+			switch(rand) {
+		
+			case 1: {
+				answer_1.style.backgroundColor = "rgb(105,114,255)";
 				answer_2.style.backgroundColor = "black";
 				answer_3.style.backgroundColor = "black";
+				break;
 			}
-	
-			else if (rand == 2) {
-				answer_2.style.backgroundColor = "yellow";
+
+			case 2: {
+				answer_2.style.backgroundColor = "rgb(105,114,255)";
 				answer_1.style.backgroundColor = "black";
 				answer_3.style.backgroundColor = "black";
+				break;
 			}
-	
-			else if (rand == 3) {
-				answer_3.style.backgroundColor = "yellow";
+
+			case 3: {
+				answer_3.style.backgroundColor = "rgb(105,114,255)";
 				answer_2.style.backgroundColor = "black";
 				answer_1.style.backgroundColor = "black";
+				break;
 			}
+			default:
+					break;
 		}
+	}
 
-
+		teng.play();
 		close();
-	}, 2000);
+	}, 4000);
 
 }
 
@@ -263,7 +298,23 @@ function helpp2() {
 		}, 1000);
 
 	}
+document.getElementsByClassName("modal-q")[0].style.display='block';
 
+tim2 = setInterval(reCountd, 1000);
+}
+
+function reCountd() {
+
+		document.getElementsByClassName("countd")[0].innerHTML = "Còn: " + timec-- + " giây";
+	
+		if (timec < 0) {
+			timec = 0
+			//lose();
+			clearInterval(tim2);
+		}
+		if (selectan === 1) {
+			clearInterval(tim2);
+		}
 
 }
 
@@ -361,6 +412,7 @@ answer_1.addEventListener("click", function () {
 				correctt.play();
 				setTimeout(function () {
 					fmoney();
+					
 					fstart();
 				}, 2000);
 			} else {
@@ -384,6 +436,7 @@ answer_2.addEventListener("click", function () {
 				correctt.play();
 				setTimeout(function () {
 					fmoney();
+					
 					fstart();
 				}, 2000);
 			} else {
@@ -407,6 +460,7 @@ answer_3.addEventListener("click", function () {
 				correctt.play();
 				setTimeout(function () {
 					fmoney();
+					
 					fstart();
 				}, 2000);
 			} else {
@@ -431,6 +485,7 @@ answer_4.addEventListener("click", function () {
 				correctt.play();
 				setTimeout(function () {
 					fmoney();
+					
 					fstart();
 				}, 2000);
 			} else {
