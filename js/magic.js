@@ -351,6 +351,163 @@ function helpp3() {
 		}, 1000);
 
 	}
+document.getElementsByClassName("modal-q2")[0].style.display='block';
+
+//
+document.getElementsByClassName("proa")[0].style.width='0%';
+document.getElementsByClassName("prob")[0].style.width='0%';
+document.getElementsByClassName("proc")[0].style.width='0%';
+document.getElementsByClassName("prod")[0].style.width='0%';
+setTimeout(function () {
+	if (correct === 1) {
+		//answer_1.style.backgroundColor = "rgb(105,114,255)";
+	//	var myArrayy = [2, 3, 4];
+		var randd = Math.ceil(Math.random()*3);
+		switch(randd) {
+			case 1: {
+				document.getElementsByClassName("proa")[0].style.width='50%';
+				document.getElementsByClassName("prob")[0].style.width='10%';
+				document.getElementsByClassName("proc")[0].style.width='15%';
+				document.getElementsByClassName("prod")[0].style.width='25%';
+				break;
+			}
+
+			case 2: {
+				document.getElementsByClassName("proa")[0].style.width='55%';
+				document.getElementsByClassName("prob")[0].style.width='20%';
+				document.getElementsByClassName("proc")[0].style.width='15%';
+				document.getElementsByClassName("prod")[0].style.width='10%';
+				break;
+
+			}
+
+			case 3: {
+				document.getElementsByClassName("proa")[0].style.width='47%';
+				document.getElementsByClassName("prob")[0].style.width='17%';
+				document.getElementsByClassName("proc")[0].style.width='28%';
+				document.getElementsByClassName("prod")[0].style.width='8%';
+				break;
+			}
+
+			default:
+				break;
+
+		}
+		
+	}
+
+	else if (correct === 2) {
+	//	answer_2.style.backgroundColor = "rgb(105,114,255)";
+	//	var myArrayy = [1, 3, 4];
+	var randd = Math.ceil(Math.random()*3);
+	switch(randd) {
+		case 1: {
+			document.getElementsByClassName("proa")[0].style.width='25%';
+			document.getElementsByClassName("prob")[0].style.width='45%';
+			document.getElementsByClassName("proc")[0].style.width='15%';
+			document.getElementsByClassName("prod")[0].style.width='15%';
+			break;
+		}
+
+		case 2: {
+			document.getElementsByClassName("proa")[0].style.width='27%';
+			document.getElementsByClassName("prob")[0].style.width='35%';
+			document.getElementsByClassName("proc")[0].style.width='15%';
+			document.getElementsByClassName("prod")[0].style.width='23%';
+			break;
+
+		}
+
+		case 3: {
+			document.getElementsByClassName("proa")[0].style.width='15%';
+			document.getElementsByClassName("prob")[0].style.width='39%';
+			document.getElementsByClassName("proc")[0].style.width='28%';
+			document.getElementsByClassName("prod")[0].style.width='18%';
+			break;
+		}
+
+		default:
+			break;
+
+	}
+	}
+
+	else if (correct === 3) {
+		//answer_3.style.backgroundColor = "rgb(105,114,255)";
+	//	var myArrayy = [1, 2, 4];
+	var randd = Math.ceil(Math.random()*3);
+	switch(randd) {
+		case 1: {
+			document.getElementsByClassName("proa")[0].style.width='25%';
+			document.getElementsByClassName("prob")[0].style.width='10%';
+			document.getElementsByClassName("proc")[0].style.width='55%';
+			document.getElementsByClassName("prod")[0].style.width='10%';
+			break;
+		}
+
+		case 2: {
+			document.getElementsByClassName("proa")[0].style.width='35%';
+			document.getElementsByClassName("prob")[0].style.width='15%';
+			document.getElementsByClassName("proc")[0].style.width='42%';
+			document.getElementsByClassName("prod")[0].style.width='8%';
+			break;
+
+		}
+
+		case 3: {
+			document.getElementsByClassName("proa")[0].style.width='27%';
+			document.getElementsByClassName("prob")[0].style.width='22%';
+			document.getElementsByClassName("proc")[0].style.width='32%';
+			document.getElementsByClassName("prod")[0].style.width='19%';
+			break;
+		}
+
+		default:
+			break;
+
+	}
+	}
+
+	else if (correct === 4) {
+		//answer_4.style.backgroundColor = "rgb(105,114,255)";
+	//	var myArrayy = [1, 2, 3];
+	var randd = Math.ceil(Math.random()*3);
+	switch(randd) {
+		case 1: {
+			document.getElementsByClassName("proa")[0].style.width='30%';
+			document.getElementsByClassName("prob")[0].style.width='20%';
+			document.getElementsByClassName("proc")[0].style.width='5%';
+			document.getElementsByClassName("prod")[0].style.width='45%';
+			break;
+		}
+
+		case 2: {
+			document.getElementsByClassName("proa")[0].style.width='22%';
+			document.getElementsByClassName("prob")[0].style.width='20%';
+			document.getElementsByClassName("proc")[0].style.width='20%';
+			document.getElementsByClassName("prod")[0].style.width='38%';
+			break;
+
+		}
+
+		case 3: {
+			document.getElementsByClassName("proa")[0].style.width='32%';
+			document.getElementsByClassName("prob")[0].style.width='8%';
+			document.getElementsByClassName("proc")[0].style.width='22%';
+			document.getElementsByClassName("prod")[0].style.width='38%';
+			break;
+		}
+
+		default:
+			break;
+
+	}
+}
+
+	teng.play();
+	close();
+}, 4000);
+//
 
 
 }
@@ -399,6 +556,7 @@ document.getElementsByClassName("hkg")[0].addEventListener("click", function () 
 
 document.getElementsByClassName("close")[0].addEventListener("click", closeko);
 document.getElementsByClassName("close")[1].addEventListener("click", close);
+document.getElementsByClassName("close")[2].addEventListener("click", closeko2);
 document.getElementsByClassName("btnko")[0].addEventListener("click", close);
 function close() {
 	document.getElementsByClassName("modal")[0].style.display = 'none';
@@ -417,6 +575,14 @@ function closeko() {
 	clearInterval(tim2);
 	clearInterval(he2);
 	timec = 30;
+	
+}
+
+function closeko2() {
+
+	document.getElementsByClassName("modal-q2")[0].style.display='none';	
+
+	clearInterval(he3);
 	
 }
 /*

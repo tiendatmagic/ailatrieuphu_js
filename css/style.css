@@ -140,7 +140,7 @@ tr {
 	justify-content: center;
 	align-items: center;
 }  
-.modal, .modal-q {
+.modal, .modal-q, .modal-q2  {
 	display: none;
 	position: fixed;
 	top: 0;
@@ -171,6 +171,21 @@ tr {
 	margin-top: 500px;
 }
 
+.modal-q2content {
+	width: 50%;
+
+	background-color: deeppink;
+
+	margin: 0 auto;
+	margin-top: 300px;
+	text-align: start;
+}
+.modal-q2content  span{
+	display: flex;
+	margin-top: 30px;
+	font-size: 20px;
+
+}
 .close, .closee {
 	float: right;
 	font-size: 30px;
@@ -206,6 +221,15 @@ tr {
 .countd {
 	font-size: 40px;
 }
+
+.proa, .prob, .proc, .prod {
+    width: 0%;
+    height: 20px;
+	background: red;
+	margin-left: 10px !important;
+}
+
+
 @media only screen and (max-width: 600px) {
 	#answer div {
 
