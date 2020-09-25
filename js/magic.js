@@ -39,7 +39,11 @@ var hh1 = document.getElementById("hh1");
 var hh2 = document.getElementById("hh2");
 var hh3 = document.getElementById("hh3");
 window.onload = function () {
-	musicbg.play();
+
+	setTimeout(function() {
+		musicbg.play();
+	},1);
+
 };
 
 
