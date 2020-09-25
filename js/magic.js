@@ -17,7 +17,7 @@ var help1 = 1;
 var help2 = 1;
 var help3 = 1;
 var help4 = 1;
-var time = 15;
+var time = 99915;
 var timec = 30;
 var tim;
 var tim2;
@@ -491,10 +491,10 @@ setTimeout(function () {
 		}
 
 		case 2: {
-			document.getElementsByClassName("proa")[0].style.width='22%';
-			document.getElementsByClassName("prob")[0].style.width='20%';
-			document.getElementsByClassName("proc")[0].style.width='20%';
-			document.getElementsByClassName("prod")[0].style.width='38%';
+			document.getElementsByClassName("proa")[0].style.width='20%';
+			document.getElementsByClassName("prob")[0].style.width='15%';
+			document.getElementsByClassName("proc")[0].style.width='25%';
+			document.getElementsByClassName("prod")[0].style.width='40%';
 			break;
 
 		}
