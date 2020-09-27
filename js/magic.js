@@ -17,7 +17,7 @@ var help1 = 1;
 var help2 = 1;
 var help3 = 1;
 var help4 = 1;
-var time = 99915;
+var time = 15;
 var timec = 30;
 var tim;
 var tim2;
@@ -38,15 +38,12 @@ var countdown = document.getElementById("countdown");
 var hh1 = document.getElementById("hh1");
 var hh2 = document.getElementById("hh2");
 var hh3 = document.getElementById("hh3");
-window.onload = function () {
-
-	setTimeout(function() {
-		musicbg.play();
-	},1);
-
-};
 
 
+function musicc() {
+
+	musicbg.play();
+}
 
 function rePlay() {
 	document.getElementsByClassName("time")[0].innerHTML = "Còn: " + time-- + " giây";
