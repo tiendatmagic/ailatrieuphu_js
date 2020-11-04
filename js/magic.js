@@ -71,7 +71,7 @@ function over() {
 	document.getElementById("questionanswer").remove();
 	var e = document.createElement("h1");
 	document.getElementById("gameover").appendChild(e);
-	e.appendChild(document.createTextNode("Bạn ngu vcl, tiền nè: "));
+	e.appendChild(document.createTextNode("Bạn đã thua, tiền nè: "));
 	document.getElementById("gameover").appendChild(e);
 	e.appendChild(document.createTextNode(money));
 	cmuss.pause();
