@@ -195,7 +195,7 @@ var question_28 = {
 	answer_d: "#NAME",
 }
 var question_29 = {
-	question: "Trong Excel, tại ô A1 chứa  nội dung 'Tiendatmagic' .Khi thực hiện công thức =RIGHT(A1,5), thì trả về kết quả ",
+	question: "Trong Excel, tại ô A1 chứa  nội dung 'Tien	datmagic' .Khi thực hiện công thức =RIGHT(A1,5), thì trả về kết quả ",
 	answer_a: "Tiend",
 	answer_b: "m",
 	answer_c: "magic",
@@ -366,3 +366,10 @@ var question_50 = {
 	answer_c: "5",
 	answer_d: "#DIV/0!",
 }
+
+var	arrquestion = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
+var ii = -1;
+
+arrquestion.sort(function() {
+	return Math.random() - 0.5
+});

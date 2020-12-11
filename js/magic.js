@@ -97,6 +97,7 @@ function lose() {
 }
 
 function finfo() {
+	document.getElementsByTagName("body")[0].style.backgroundColor='#eee';
 	musicbg.pause();
 	cinfo.play();
 	info.style.display = 'none';
@@ -115,12 +116,14 @@ function finfo() {
 }
 start.addEventListener("click", function() {
 	setTimeout(fstart, 3000);
+
 });
 
 
 start.addEventListener("click", function() {
 	start.style.display = 'none';
 	sta.play();
+
 });
 info.addEventListener("click", finfo);
 

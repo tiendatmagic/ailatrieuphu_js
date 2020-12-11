@@ -2,7 +2,10 @@ function fstart() {
 	musicbg.pause();
 	cmuss.play();
 	start.style.display = 'none';
-	var math = Math.ceil(Math.random() * 50);
+
+	// var math = Math.ceil(Math.random() * 50);
+	ii +=1;
+    math = (arrquestion[ii]);
 	order = math;
 	document.getElementsByClassName("cau")[0].innerText = "Câu:";
 	document.getElementById("questionanswer").style.display = 'block';
@@ -23,7 +26,6 @@ function fstart() {
 			selectan = 0;
 		}, 1400);
 		setTimeout(function() {
-			//rePlay();
 			tim = setInterval(rePlay, 1000);
 		}, 1500);
 		switch(math) {
