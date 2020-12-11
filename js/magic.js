@@ -74,6 +74,13 @@ function over() {
 	e.appendChild(document.createTextNode("Bạn đã thua, tiền nè: "));
 	document.getElementById("gameover").appendChild(e);
 	e.appendChild(document.createTextNode(money));
+	var butto = document.createElement("button");
+	
+	document.getElementById("gameover").appendChild(butto);
+	butto.classList.add("reseet");
+	butto.appendChild(document.createTextNode("Chơi lại	"));
+	butto.setAttribute("onclick","location.reload();");
+	butto.setAttribute("class","reset");
 	cmuss.pause();
 	cover.play();
 }

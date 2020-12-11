@@ -23,7 +23,7 @@ h1 {
 	justify-content: center;
 }
 
-.start, .info{
+.start, .info {
 	background-color: rgb(79, 255, 62);
 	padding: 30px;
 	border-radius: 15px;
@@ -32,6 +32,18 @@ h1 {
 	display: flex;
 	margin: 200px auto;
     cursor: pointer;
+    font-size: 25px;
+}
+
+.reset {
+	background-color: rgb(79, 255, 62);
+	padding: 20px;
+	border-radius: 15px;
+	outline: none;
+	border: none;
+	display: flex;	
+	cursor: pointer;
+	margin: 0 auto;
     font-size: 25px;
 }
 
