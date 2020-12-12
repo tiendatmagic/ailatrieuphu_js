@@ -17,7 +17,7 @@ var help1 = 1;
 var help2 = 1;
 var help3 = 1;
 var help4 = 1;
-var time = 15;
+var time = 20;
 var timec = 30;
 var tim;
 var tim2;
@@ -64,6 +64,13 @@ function winner() {
 	e.appendChild(document.createTextNode("Bạn đã phá đảo thành công game này, số tiền của bạn: "));
 	document.getElementById("gameover").appendChild(e);
 	e.appendChild(document.createTextNode(money));
+	var butto = document.createElement("button");
+	
+	document.getElementById("gameover").appendChild(butto);
+	butto.classList.add("reseet");
+	butto.appendChild(document.createTextNode("Chơi lại	"));
+	butto.setAttribute("onclick","location.reload();");
+	butto.setAttribute("class","reset");
 	cmuss.pause();
 }
 
@@ -625,7 +632,7 @@ answer_1.addEventListener("click", function () {
 	if (selectan === 1) {
 		waitingg.play();
 
-		time = 15;
+		time = 20;
 		answer_1.style.backgroundColor = "orange";
 		setTimeout(function () {
 			answer_1.style.backgroundColor = "rgb(105,114,255)";
@@ -649,7 +656,7 @@ answer_2.addEventListener("click", function () {
 	if (selectan === 1) {
 		waitingg.play();
 
-		time = 15;
+		time = 20;
 		answer_2.style.backgroundColor = "orange";
 		setTimeout(function () {
 			answer_2.style.backgroundColor = "rgb(105,114,255)";
@@ -673,7 +680,7 @@ answer_3.addEventListener("click", function () {
 	if (selectan === 1) {
 		waitingg.play();
 
-		time = 15;
+		time = 20;
 		answer_3.style.backgroundColor = "orange";
 		setTimeout(function () {
 			answer_3.style.backgroundColor = "rgb(105,114,255)";
@@ -697,7 +704,7 @@ answer_4.addEventListener("click", function () {
 	if (selectan === 1) {
 		waitingg.play();
 
-		time = 15;
+		time = 20;
 
 		answer_4.style.backgroundColor = "orange";
 		setTimeout(function () {
